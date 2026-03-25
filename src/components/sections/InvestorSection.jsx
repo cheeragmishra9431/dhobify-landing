@@ -1,14 +1,13 @@
 import Section from '../ui/Section'
 import Container from '../ui/Container'
-import Button from '../ui/Button'
 import { landingContent } from '../../data/landingContent'
 
 function InvestorSection() {
-  const { sectionHeadline, visionPoints, closingStatement, cta } =
+  const { sectionHeadline, visionPoints, closingStatement } =
     landingContent.investor
 
   return (
-    <Section background="dark">
+    <Section id="investor" background="dark" className="scroll-mt-24">
       <Container>
         <h2 className="font-heading text-section-mobile font-bold text-white md:text-section-desktop">
           {sectionHeadline}
@@ -26,11 +25,6 @@ function InvestorSection() {
         <p className="mt-12 max-w-2xl font-body text-lg text-white/90 leading-relaxed">
           {closingStatement}
         </p>
-        <div className="mt-8">
-          <Button variant="secondary" size="lg" className="border-white text-white hover:bg-white hover:text-brand-deep-black">
-            {cta}
-          </Button>
-        </div>
       </Container>
     </Section>
   )

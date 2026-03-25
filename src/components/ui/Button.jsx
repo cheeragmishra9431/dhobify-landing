@@ -1,5 +1,15 @@
-function Button({ variant = 'primary', size = 'md', onClick, children, type = 'button', disabled, className = '' }) {
-  const baseStyles = 'inline-flex items-center justify-center font-heading font-semibold rounded-lg transition-colors duration-200 min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
+function Button({
+  variant = 'primary',
+  size = 'md',
+  onClick,
+  children,
+  type = 'button',
+  disabled,
+  className = '',
+  href,
+}) {
+  const baseStyles =
+    'inline-flex items-center justify-center font-heading font-semibold rounded-lg transition-colors duration-200 min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
 
   const variantStyles = {
     primary:
@@ -14,13 +24,18 @@ function Button({ variant = 'primary', size = 'md', onClick, children, type = 'b
     lg: 'px-8 py-4 text-lg',
   }
 
+  const composed = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`.trim()
+
+  if (href && !disabled) {
+    return (
+      <a href={href} onClick={onClick} className={composed}>
+        {children}
+      </a>
+    )
+  }
+
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`.trim()}
-    >
+    <button type={type} onClick={onClick} disabled={disabled} className={composed}>
       {children}
     </button>
   )

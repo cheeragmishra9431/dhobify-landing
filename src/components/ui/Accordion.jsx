@@ -11,7 +11,7 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
         aria-expanded={isOpen}
         aria-controls={`accordion-panel-${id}`}
         onClick={() => onToggle(index)}
-        className="flex w-full items-center justify-between py-4 text-left font-body text-base font-medium text-brand-black hover:text-brand-black/80 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-inset min-h-[44px]"
+        className="flex w-full items-center justify-between px-5 py-6 text-left font-body text-base font-medium text-brand-black hover:text-brand-black/80 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-inset min-h-[44px]"
       >
         {question}
         <span
@@ -42,7 +42,7 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
         className={`grid transition-all duration-200 ease-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
       >
         <div className="overflow-hidden">
-          <div className="pb-4 pr-8 font-body text-base text-brand-body-grey leading-relaxed">
+          <div className="px-5 pb-6 pt-1 font-body text-base text-brand-body-grey leading-relaxed">
             {answer}
           </div>
         </div>

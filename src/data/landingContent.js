@@ -9,9 +9,8 @@ export const landingContent = {
     headline: 'Why Stick to One Laundry Store?',
     subheadline:
       'Tired of random laundry choices? Compare stores in HSR, choose the best one, and get your clothes picked up and delivered — fast.',
-    supportingLine: 'Now serving HSR Layout.',
-    primaryCta: 'Download the App',
-    secondaryCtas: ['Become a Partner', 'Request Investor Deck'],
+    supportingLine: 'HSR Layout Bengaluru',
+    secondaryCtas: ['Become a Partner'],
   },
 
   problem: {
@@ -49,7 +48,12 @@ export const landingContent = {
 
   services: {
     sectionHeadline: 'Everything Your Laundry Needs',
-    servicesList: ['Wash & Fold', 'Wash & Iron', 'Dry Cleaning', 'Steam Iron'],
+    servicesList: [
+      { name: 'Wash & Fold', icon: 'shirt' },
+      { name: 'Wash & Iron', icon: 'iron' },
+      { name: 'Dry Cleaning', icon: 'droplets' },
+      { name: 'Steam Iron', icon: 'steam' },
+    ],
     highlightLine: 'Free pickup on orders above ₹300.',
   },
 
@@ -95,11 +99,10 @@ export const landingContent = {
       'Launching in HSR Layout',
       'Targeting 500+ households in Phase 1',
       'Asset-light marketplace model',
-      'Designed to expand city by city',
+      'Designed to expand pincode by pincode',
     ],
     closingStatement:
       'Dhobify is building the operating layer for hyperlocal laundry services.',
-    cta: 'Request Investor Deck',
   },
 
   faq: {
@@ -140,19 +143,18 @@ export const landingContent = {
   finalCTA: {
     headline: 'Ready to Simplify Laundry?',
     subheadline: 'Compare stores. Book pickup. Get it delivered.',
-    buttons: ['Download the App', 'List Your Store', 'Request Investor Deck'],
+    listStoreCta: 'List Your Store',
   },
 
   navbar: {
     navLinks: [],
-    cta: 'Download the App',
   },
 
   footer: {
     about:
       'Dhobify is a hyperlocal laundry marketplace connecting customers with trusted laundry partners in HSR Layout.',
     location: 'Currently serving HSR Layout, Bengaluru.',
-    contactEmail: 'hello@dhobify.com',
+    contactEmail: 'support@dhobify.in',
     links: [
       { text: 'Privacy Policy', href: '#' },
       { text: 'Terms of Service', href: '#' },

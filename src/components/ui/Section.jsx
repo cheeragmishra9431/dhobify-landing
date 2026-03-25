@@ -1,4 +1,4 @@
-function Section({ background = 'white', children, className = '' }) {
+function Section({ background = 'white', children, className = '', id }) {
   const bgStyles = {
     white: 'bg-white',
     grey: 'bg-brand-light-grey',
@@ -7,6 +7,7 @@ function Section({ background = 'white', children, className = '' }) {
 
   return (
     <section
+      id={id}
       className={`py-[60px] md:py-20 lg:py-24 ${bgStyles[background]} ${className}`.trim()}
     >
       {children}

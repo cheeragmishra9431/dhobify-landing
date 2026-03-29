@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/logo.svg'
 import Container from '../ui/Container'
 import { landingContent } from '../../data/landingContent'
@@ -36,13 +37,13 @@ function Footer() {
             aria-label="Footer links"
           >
             {links.map((link) => (
-              <a
+              <Link
                 key={link.text}
-                href={link.href}
+                to={link.href}
                 className="font-body text-sm text-white/90 hover:text-white transition-colors"
               >
                 {link.text}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

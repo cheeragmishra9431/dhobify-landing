@@ -156,8 +156,10 @@ export const landingContent = {
     location: 'Currently serving HSR Layout, Bengaluru.',
     contactEmail: 'support@dhobify.in',
     links: [
-      { text: 'Privacy Policy', href: '#' },
-      { text: 'Terms of Service', href: '#' },
+      { text: 'Privacy Policy', href: '/privacy' },
+      { text: 'Terms of Service', href: '/terms' },
+      { text: 'Refund Policy', href: '/refund' },
+      { text: 'Support', href: '/support' },
     ],
   },
 }

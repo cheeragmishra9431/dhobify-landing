@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/logo.svg'
 import Container from '../ui/Container'
 import { landingContent } from '../../data/landingContent'
@@ -26,13 +27,13 @@ function Navbar() {
       <Container className="min-w-0">
         <div className="flex h-24 min-w-0 items-center justify-between gap-2">
           {/* Logo */}
-          <a href="#" className="flex shrink-0 min-w-0" onClick={closeMenu}>
+          <Link to="/" className="flex shrink-0 min-w-0" onClick={closeMenu}>
             <img
               src={logo}
               alt="Dhobify logo"
               className="h-24 w-auto max-w-[400px] object-contain sm:max-w-none"
             />
-          </a>
+          </Link>
 
           {navLinks.length > 0 && (
             <>

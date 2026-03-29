@@ -13,8 +13,10 @@ import FinalCTA from '../components/sections/FinalCTA'
 function LandingPage() {
   return (
     <>
-      <div className="bg-brand-yellow text-brand-black text-center py-2 px-4 font-body text-sm font-semibold tracking-wide">
-        Launching on 1st May 2026
+      <div className="announcement-banner bg-brand-black text-center py-2.5 px-4 relative overflow-hidden">
+        <span className="relative z-10 font-heading text-sm md:text-base font-bold tracking-widest uppercase">
+          <span className="banner-text">🚀 Launching on 1st May 2026</span>
+        </span>
       </div>
       <Navbar />
       <HeroSection />

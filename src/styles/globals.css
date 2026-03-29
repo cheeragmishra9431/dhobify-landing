@@ -66,3 +66,59 @@
     outline-offset: 2px;
   }
 }
+
+/* Announcement banner */
+.banner-text {
+  background: linear-gradient(
+    90deg,
+    #FACC15 0%,
+    #FDE68A 25%,
+    #FFFFFF 50%,
+    #FDE68A 75%,
+    #FACC15 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 3s linear infinite;
+}
+
+.announcement-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(250, 204, 21, 0.12) 50%,
+    transparent 70%,
+    transparent 100%
+  );
+  animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  60% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}

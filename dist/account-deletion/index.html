@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>Account deletion — Dhobify</title>
+    <meta
+      name="description"
+      content="How to request deletion of your Dhobify account and associated data. Primary method: delete account in the Dhobify app."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #1a1a1a;
+        background: #fff;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        font-weight: 700;
+        margin: 0 0 1rem;
+      }
+      h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin: 2rem 0 0.75rem;
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+      ul,
+      ol {
+        margin: 0 0 1rem;
+        padding-left: 1.35rem;
+      }
+      li {
+        margin-bottom: 0.35rem;
+      }
+      .intro {
+        margin-bottom: 1.5rem;
+      }
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e5e5e5;
+        font-size: 0.875rem;
+        color: #555;
+      }
+      a {
+        color: #0b57d0;
+      }
+      a:visited {
+        color: #5c2d91;
+      }
+      .muted {
+        color: #555;
+        font-size: 0.9375rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Delete your Dhobify account</h1>
+
+      <div class="intro">
+        <p>
+          This page explains how you can request deletion of your Dhobify account
+          and data associated with your account. Dhobify is published on Google Play
+          under the name <strong>Dhobify</strong>.
+        </p>
+      </div>
+
+      <h2>How to delete your account (in the app)</h2>
+      <p>
+        The primary way to delete your account is inside the Dhobify mobile app.
+        Follow these steps:
+      </p>
+      <ol>
+        <li>Open the <strong>Dhobify</strong> app on your device.</li>
+        <li>
+          Go to <strong>Profile</strong> or <strong>Account</strong> (whichever
+          label your app version shows).
+        </li>
+        <li>Tap <strong>Delete account</strong> (or similarly named option).</li>
+        <li>Read the on-screen warning carefully.</li>
+        <li>Confirm when prompted to complete the request.</li>
+      </ol>
+      <p>
+        After you confirm, deletion is <strong>permanent</strong>. You will not be
+        able to restore the same account from the app.
+      </p>
+
+      <h2>What data is deleted</h2>
+      <p>When account deletion completes successfully in our systems, we remove or clear:</p>
+      <ul>
+        <li>
+          Your customer profile (for example, phone, name, and account settings
+          stored with your account).
+        </li>
+        <li>
+          Your sign-in identity (removed when deletion completes successfully).
+        </li>
+        <li>Saved addresses.</li>
+        <li>Active carts and cart line items.</li>
+        <li>Push notification device registrations.</li>
+        <li>
+          Personal delivery details stored on past orders (for example, saved
+          address snapshots and customer notes on those orders).
+        </li>
+        <li>
+          Reviews and coupon redemptions linked to your user — cleared or delinked
+          as part of account deletion.
+        </li>
+      </ul>
+      <p class="muted">
+        If any category of personal data is not fully removed, it is listed under
+        <strong>What may be kept or anonymized</strong> below.
+      </p>
+
+      <h2>What may be kept or anonymized</h2>
+      <p>
+        Some records are kept for legal or operational reasons, or sit outside the
+        app’s account-deletion flow. These may include:
+      </p>
+      <ul>
+        <li>
+          <strong>Commercial and audit records:</strong> order, item, bill, and
+          status-history data without the cleared personal fields (for example,
+          amounts, fees, and operational status), where we need them to run the
+          business and meet record-keeping expectations.
+        </li>
+        <li>
+          <strong>Tax, accounting, and disputes:</strong> We retain business and tax
+          records for at least six years from the end of the relevant assessment
+          year where the Income Tax Act, 1961 applies, and longer while any
+          assessment, appeal, or dispute remains open. We may retain order, billing,
+          and operational records (including amounts, fees, and status history) in
+          non-identifying or aggregated form where needed for legal, tax, audit, or
+          dispute handling, consistent with this retention approach.
+        </li>
+        <li>
+          <strong>Provider and platform logs:</strong> SMS providers, hosting and
+          database services (including Supabase), and similar infrastructure logs are
+          not deleted by this app’s account deletion alone.
+        </li>
+        <li>
+          <strong>Third-party services:</strong> Third-party services described in
+          our <a href="https://www.dhobify.in/privacy">Privacy Policy</a> may retain
+          technical or usage data under their own policies; account deletion in the
+          app does not delete vendor-side copies.
+        </li>
+        <li>
+          <strong>Deletion edge case:</strong> if sign-in removal does not complete
+          in a single pass, your auth record might persist briefly until we resolve
+          it — contact support using the details below if you believe your account
+          was not fully removed.
+        </li>
+      </ul>
+
+      <h2>Retention and processing time</h2>
+      <p>
+        <strong>Deletion timing:</strong> Account deletion is applied promptly after
+        you confirm in the app.
+      </p>
+      <p>
+        <strong>Database backups:</strong> Production data is on Supabase.
+        Point-in-Time Recovery (PITR) is not enabled. Scheduled backups run daily
+        (around midnight in the project region). Deleted rows may still exist in
+        automatic backups for up to 7 days, after which they age out with the backup
+        rotation for our current plan. If a backup were restored, data could
+        reappear as of that backup time; we would reconcile or re-run deletion as
+        needed.
+      </p>
+
+      <h2>If you cannot access the app</h2>
+      <p>Alternative contact (use if you cannot complete deletion in the app):</p>
+      <ul>
+        <li>Email: <a href="mailto:support@dhobify.in">support@dhobify.in</a></li>
+        <li>Phone: <a href="tel:+916377229112">+91 63772 29112</a></li>
+        <li>
+          WhatsApp:
+          <a href="https://wa.me/916377229112">+91 63772 29112</a>
+        </li>
+      </ul>
+      <p>
+        To help us verify your identity before we process a deletion request,
+        please send your <strong>registered phone number</strong> and
+        <strong>full name</strong> as they appear on your Dhobify account. We may
+        ask for additional information if needed to confirm the request.
+      </p>
+
+      <h2>Related policies</h2>
+      <ul>
+        <li>
+          <a href="https://www.dhobify.in/privacy">Privacy policy</a>
+          (https://www.dhobify.in/privacy)
+        </li>
+        <li>
+          <a href="https://www.dhobify.in/terms">Terms of use</a>
+          (https://www.dhobify.in/terms)
+        </li>
+        <li>
+          <a href="https://www.dhobify.in/data-deletion">Delete or update some data without deleting your account</a>
+          (https://www.dhobify.in/data-deletion)
+        </li>
+      </ul>
+
+      <footer>
+        <p><strong>Dhobify</strong></p>
+        <p>Last updated: <strong>April 21, 2026</strong></p>
+        <p>
+          <a href="/">Home</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

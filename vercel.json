@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/delete-my-data",
+      "destination": "/data-deletion/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

@@ -158,6 +158,12 @@ export const landingContent = {
     links: [
       { text: 'Privacy Policy', href: '/privacy' },
       { text: 'Terms of Service', href: '/terms' },
+      {
+        text: 'Delete saved data',
+        href: '/data-deletion',
+        native: true,
+      },
+      { text: 'Account deletion', href: '/account-deletion', native: true },
       { text: 'Refund Policy', href: '/refund' },
       { text: 'Support', href: '/support' },
     ],

@@ -36,15 +36,25 @@ function Footer() {
             className="flex flex-col gap-3 md:items-end"
             aria-label="Footer links"
           >
-            {links.map((link) => (
-              <Link
-                key={link.text}
-                to={link.href}
-                className="font-body text-sm text-white/90 hover:text-white transition-colors"
-              >
-                {link.text}
-              </Link>
-            ))}
+            {links.map((link) =>
+              link.native ? (
+                <a
+                  key={link.text}
+                  href={link.href}
+                  className="font-body text-sm text-white/90 hover:text-white transition-colors"
+                >
+                  {link.text}
+                </a>
+              ) : (
+                <Link
+                  key={link.text}
+                  to={link.href}
+                  className="font-body text-sm text-white/90 hover:text-white transition-colors"
+                >
+                  {link.text}
+                </Link>
+              ),
+            )}
           </nav>
         </div>
       </Container>

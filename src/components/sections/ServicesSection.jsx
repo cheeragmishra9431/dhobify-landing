@@ -1,6 +1,7 @@
 import Section from '../ui/Section'
 import Container from '../ui/Container'
 import SectionEyebrow from '../ui/SectionEyebrow'
+import Reveal from '../motion/Reveal'
 import { landingContent } from '../../data/landingContent'
 
 const serviceIcons = {
@@ -77,26 +78,32 @@ function ServicesSection() {
   return (
     <Section background="grey">
       <Container>
-        <SectionEyebrow>{eyebrow}</SectionEyebrow>
-        <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
-          {sectionHeadline}
-        </h2>
-        <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:mt-10 lg:grid-cols-4">
-          {servicesList.map((service) => (
-            <li
-              key={service.name}
-              className="flex min-h-[52px] items-center gap-3 rounded-lg border border-gray-200/80 bg-white px-4 py-3 font-body text-base font-medium text-brand-black shadow-sm"
-            >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-light-grey text-brand-black">
-                {serviceIcons[service.icon]}
-              </span>
-              <span className="leading-snug">{service.name}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-8 max-w-3xl rounded-lg border border-brand-yellow/25 bg-brand-yellow/10 px-4 py-3 font-body text-base font-semibold leading-relaxed text-brand-black md:px-5 md:py-4">
-          {highlightLine}
-        </p>
+        <Reveal delay={0}>
+          <SectionEyebrow>{eyebrow}</SectionEyebrow>
+          <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            {sectionHeadline}
+          </h2>
+        </Reveal>
+        <Reveal delay={80}>
+          <ul className="mt-8 grid list-none gap-3 p-0 sm:grid-cols-2 sm:gap-4 lg:mt-10 lg:grid-cols-4">
+            {servicesList.map((service) => (
+              <li
+                key={service.name}
+                className="flex min-h-[52px] items-center gap-3 rounded-xl border border-gray-200/80 bg-white px-4 py-3 font-body text-base font-medium text-brand-black shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-0.5 hover:border-brand-yellow/35 hover:shadow-md motion-reduce:hover:translate-y-0"
+              >
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-light-grey text-brand-black transition-colors duration-300">
+                  {serviceIcons[service.icon]}
+                </span>
+                <span className="leading-snug">{service.name}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+        <Reveal delay={100}>
+          <p className="mt-8 max-w-3xl rounded-xl border border-brand-yellow/25 bg-brand-yellow/10 px-4 py-3 font-body text-base font-semibold leading-relaxed text-brand-black shadow-sm backdrop-blur-sm md:px-5 md:py-4">
+            {highlightLine}
+          </p>
+        </Reveal>
       </Container>
     </Section>
   )

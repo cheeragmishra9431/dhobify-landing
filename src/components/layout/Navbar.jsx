@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 border-b border-transparent bg-white/95 backdrop-blur-sm transition-[box-shadow,border-color] duration-200 ${
+      className={`sticky top-0 z-50 border-b border-transparent bg-white/95 backdrop-blur-sm transition-[box-shadow,border-color,background-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         hasScrolled ? 'border-gray-100 shadow-sm' : ''
       }`}
     >

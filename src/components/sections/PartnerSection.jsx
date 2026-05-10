@@ -4,6 +4,7 @@ import Container from '../ui/Container'
 import Button from '../ui/Button'
 import InputField from '../ui/InputField'
 import SectionEyebrow from '../ui/SectionEyebrow'
+import Reveal from '../motion/Reveal'
 import { landingContent } from '../../data/landingContent'
 import { supabase } from '../../lib/supabaseClient'
 
@@ -78,35 +79,35 @@ function PartnerSection() {
     <Section id="partner" background="grey" className="scroll-mt-20">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-14 lg:items-start">
-          <div>
-            <SectionEyebrow>{eyebrow}</SectionEyebrow>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
-              {sectionHeadline}
-            </h2>
-            <p className="mt-5 font-body text-base text-brand-body-grey leading-relaxed sm:mt-6 sm:text-lg">
-              {description}
-            </p>
-            <ul className="mt-8 space-y-3">
-              {benefits.map((benefit) => (
-                <li
-                  key={benefit}
-                  className="flex items-start gap-3 font-body text-base text-brand-black"
-                >
-                  <span
-                    className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-yellow ring-2 ring-brand-yellow/35"
-                    aria-hidden
-                  />
-                  <span className="leading-relaxed">{benefit}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Reveal delay={0}>
+            <div>
+              <SectionEyebrow>{eyebrow}</SectionEyebrow>
+              <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+                {sectionHeadline}
+              </h2>
+              <p className="mt-5 font-body text-base text-brand-body-grey leading-relaxed sm:mt-6 sm:text-lg">
+                {description}
+              </p>
+              <ul className="mt-8 space-y-3">
+                {benefits.map((benefit) => (
+                  <li key={benefit} className="flex items-start gap-3 font-body text-base text-brand-black">
+                    <span
+                      className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand-yellow ring-2 ring-brand-yellow/35"
+                      aria-hidden
+                    />
+                    <span className="leading-relaxed">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
 
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-card border border-gray-200 bg-white p-5 shadow-md sm:p-7 md:p-8"
-            noValidate
-          >
+          <Reveal delay={110} rootMargin="-8%">
+            <form
+              onSubmit={handleSubmit}
+              className="rounded-2xl border border-gray-200 bg-white p-5 shadow-[0_20px_50px_-28px_rgba(17,17,17,0.12)] ring-1 ring-gray-900/[0.04] transition-[transform,box-shadow] duration-300 ease-out hover:shadow-[0_28px_56px_-28px_rgba(17,17,17,0.14)] sm:p-7 md:p-8"
+              noValidate
+            >
             <p className="font-heading text-lg font-bold text-brand-black">Partner application</p>
             <p className="mt-1 font-body text-sm text-brand-body-grey">
               Short form — we usually reply within a few business days.
@@ -141,6 +142,7 @@ function PartnerSection() {
               {status === 'loading' ? 'Sending…' : cta}
             </Button>
           </form>
+          </Reveal>
         </div>
       </Container>
     </Section>

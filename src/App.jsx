@@ -5,6 +5,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import RefundPolicy from './pages/RefundPolicy'
 import Support from './pages/Support'
+import LaundryInAreaOrNotFound from './pages/LaundryInAreaOrNotFound'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/:slug" element={<LaundryInAreaOrNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>

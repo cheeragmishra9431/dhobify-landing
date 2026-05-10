@@ -8,7 +8,7 @@ export const landingContent = {
   hero: {
     headline: 'Why Stick to One Laundry Store?',
     subheadline:
-      'Tired of random laundry choices? Compare stores in HSR, choose the best one, and get your clothes picked up and delivered — fast.',
+      'Tired of random laundry choices? Compare stores in HSR, pick times for pickup and delivery, and get your clothes back when you need them.',
     supportingLine: 'HSR Layout Bengaluru',
     secondaryCtas: ['Become a Partner'],
   },
@@ -22,7 +22,7 @@ export const landingContent = {
       'No order tracking or updates',
     ],
     transitionStatement:
-      'Dhobify connects you to verified laundry partners with doorstep pickup, transparent pricing, and reliable delivery — all in one app.',
+      'Dhobify connects you to verified laundry partners with doorstep pickup, the option to schedule your delivery, transparent pricing, and reliable handoffs — all in one app.',
   },
 
   howItWorks: {
@@ -34,14 +34,14 @@ export const landingContent = {
           'Browse and compare laundry stores near you. Check pricing and services before you decide.',
       },
       {
-        title: 'Schedule Pickup',
+        title: 'Schedule Pickup & Delivery',
         description:
-          "Select a convenient time. We'll collect your clothes from your doorstep.",
+          "Choose collection and return times that work for you—we pick up and bring your clothes back on your schedule.",
       },
       {
         title: 'Get Fresh Clothes Back',
         description:
-          'Sit back while your clothes are professionally cleaned and delivered in 24–48 hours.',
+          'Sit back while your clothes are professionally cleaned and returned in the window you set—often within 24–48 hours unless you choose a different slot.',
       },
     ],
   },
@@ -54,13 +54,14 @@ export const landingContent = {
       { name: 'Dry Cleaning', icon: 'droplets' },
       { name: 'Steam Iron', icon: 'steam' },
     ],
-    highlightLine: 'Free pickup on orders above ₹300.',
+    highlightLine: 'Free pickup on orders above ₹300. Schedule your delivery at checkout when you book.',
   },
 
   benefits: {
     sectionHeadline: 'Why Dhobify?',
     items: [
       'Multiple laundry brands in one app',
+      'Schedule pickup and delivery when it works for you',
       'Transparent pricing before you book',
       'Hyperlocal focus in HSR Layout',
       'Secure digital payments',
@@ -96,7 +97,7 @@ export const landingContent = {
   investor: {
     sectionHeadline: 'Built for Hyperlocal Scale',
     visionPoints: [
-      'Launching in HSR Layout',
+      'Launching in HSR Layout in MAY 2026',
       'Targeting 500+ households in Phase 1',
       'Asset-light marketplace model',
       'Designed to expand pincode by pincode',
@@ -123,7 +124,14 @@ export const landingContent = {
       {
         id: 'delivery-time',
         question: 'How long does delivery take?',
-        answer: 'Most orders are delivered within 24–48 hours.',
+        answer:
+          'Most orders are delivered within 24–48 hours, depending on the store and the slots you select. You can schedule your return delivery when you place your order.',
+      },
+      {
+        id: 'schedule-delivery',
+        question: 'Can I pick when my clothes are delivered?',
+        answer:
+          'Yes. When you book, you can choose a delivery window (based on the partner’s availability) so you are home—or pick a time that fits your routine.',
       },
       {
         id: 'damaged-clothes',
@@ -142,7 +150,7 @@ export const landingContent = {
 
   finalCTA: {
     headline: 'Ready to Simplify Laundry?',
-    subheadline: 'Compare stores. Book pickup. Get it delivered.',
+    subheadline: 'Compare stores. Schedule pickup and delivery. Get it when you need it.',
     listStoreCta: 'List Your Store',
   },
 
@@ -156,6 +164,7 @@ export const landingContent = {
     location: 'Currently serving HSR Layout, Bengaluru.',
     contactEmail: 'support@dhobify.in',
     links: [
+      { text: 'Laundry in HSR Layout', href: '/laundry-in-hsr-layout' },
       { text: 'Privacy Policy', href: '/privacy' },
       { text: 'Terms of Service', href: '/terms' },
       {

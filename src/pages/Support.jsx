@@ -67,6 +67,10 @@ function Support() {
               a: 'Go to Profile → Addresses to add or edit your saved addresses.',
             },
             {
+              q: 'Can I schedule when my laundry is picked up and delivered?',
+              a: 'Yes. When you book, you can choose pickup and delivery time slots based on partner availability. You can reschedule from your order details if something changes.',
+            },
+            {
               q: 'How do I cancel an order?',
               a: 'You can cancel an order before pickup. Contact us on WhatsApp for assistance.',
             },

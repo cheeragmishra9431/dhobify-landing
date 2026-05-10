@@ -2,9 +2,9 @@ import Section from '../ui/Section'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
 import Reveal from '../motion/Reveal'
+import OrderFlowDemo from '../order-flow/OrderFlowDemo'
 import { landingContent } from '../../data/landingContent'
-
-import heroImage from '../../assets/images/hero-mockup.jpg'
+import { orderFlowShowcaseCopy } from '../../data/orderFlowShowcase'
 
 function HeroSection() {
   const { headline, subheadline, supportingLine, primaryCta, secondaryCta } =
@@ -12,33 +12,35 @@ function HeroSection() {
 
   return (
     <Section
+      id="order-flow"
       background="white"
-      className="hero-section hero-grain relative overflow-hidden scroll-mt-20 pt-8 pb-12 md:pt-12 md:pb-20 lg:py-24"
+      className="hero-section hero-grain relative overflow-hidden scroll-mt-20 pt-10 pb-14 md:pt-14 md:pb-20 lg:py-[5.5rem]"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="motion-safe:animate-seo-float absolute -right-[20%] top-[-10%] h-[min(420px,50vw)] w-[min(420px,90vw)] rounded-full bg-brand-yellow/[0.11] blur-2xl md:blur-3xl motion-reduce:animate-none" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-brand-light-grey/25" />
+        <div className="motion-safe:animate-seo-float absolute -right-[18%] top-[-8%] h-[min(380px,48vw)] w-[min(380px,85vw)] rounded-full bg-brand-yellow/[0.09] blur-3xl motion-reduce:animate-none" />
+        <div className="absolute -left-[16%] bottom-[-12%] h-[min(300px,50vw)] w-[min(320px,52vw)] rounded-full bg-[radial-gradient(circle,rgba(214,71,58,0.07)_0%,transparent_70%)] blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-[#fafafa]" />
       </div>
 
       <Container className="relative">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 lg:items-center">
-          <Reveal className="order-1" delay={0}>
-            <h1 className="font-heading text-hero-mobile font-extrabold text-brand-black leading-[1.08] tracking-tight md:text-hero-desktop lg:text-hero-display lg:leading-[1.06]">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:items-center lg:gap-14 xl:gap-20">
+          <Reveal className="order-1 max-w-xl lg:max-w-none xl:max-w-[34rem]" delay={0}>
+            <h1 className="font-heading text-hero-mobile font-extrabold leading-[1.07] tracking-[-0.02em] text-brand-black md:text-hero-desktop lg:text-hero-display lg:leading-[1.05]">
               {headline}
             </h1>
-            <p className="mt-4 font-body text-base text-brand-body-grey leading-relaxed max-w-xl md:mt-7 md:text-lg md:leading-relaxed">
+            <p className="mt-6 max-w-xl border-l-[3px] border-[#d6473a] pl-5 font-body text-base leading-relaxed text-brand-body-grey md:mt-8 md:text-lg md:leading-[1.7]">
               {subheadline}
             </p>
-            <p className="mt-4 md:mt-5">
-              <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-brand-light-grey/90 px-3 py-2 font-body text-sm font-medium text-brand-black shadow-sm transition-shadow duration-300 hover:shadow-md">
+            <p className="mt-5 md:mt-6">
+              <span className="inline-flex items-center gap-2.5 rounded-full border border-[rgba(214,71,58,0.18)] bg-white px-4 py-2.5 font-body text-sm font-medium text-brand-black shadow-[0_2px_12px_-4px_rgba(17,17,17,0.06)] transition-shadow duration-300 hover:shadow-[0_4px_20px_-6px_rgba(214,71,58,0.12)]">
                 <span
-                  className="h-2 w-2 shrink-0 rounded-full bg-brand-yellow ring-2 ring-brand-yellow/40 motion-safe:animate-pulse motion-reduce:animate-none"
+                  className="h-2 w-2 shrink-0 rounded-full bg-[#d6473a] opacity-90"
                   aria-hidden
                 />
                 {supportingLine}
               </span>
             </p>
-            <div className="mt-6 flex w-full max-w-xl flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-3">
+            <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:gap-3">
               <Button href={primaryCta.href} variant="primary" size="lg" className="w-full min-h-[48px] sm:w-auto sm:min-w-[200px]">
                 {primaryCta.label}
               </Button>
@@ -48,47 +50,28 @@ function HeroSection() {
             </div>
           </Reveal>
 
-          <Reveal className="order-2 flex items-center justify-center px-2 sm:px-4 lg:justify-end" delay={110} rootMargin="-6%">
-            <figure className="relative m-0 w-full max-w-[min(100%,280px)] shrink-0">
-              <div
-                className="pointer-events-none absolute left-0 top-[26%] z-20 flex -translate-x-[2px] flex-col gap-2"
-                aria-hidden
-              >
-                <div className="h-9 w-[3px] rounded-l-[3px] bg-[#3a3a3c] shadow-[inset_-1px_0_0_rgba(0,0,0,0.35)]" />
-                <div className="h-9 w-[3px] rounded-l-[3px] bg-[#3a3a3c] shadow-[inset_-1px_0_0_rgba(0,0,0,0.35)]" />
-              </div>
-              <div
-                className="pointer-events-none absolute right-0 top-[22%] z-20 translate-x-[2px]"
-                aria-hidden
-              >
-                <div className="h-16 w-[3px] rounded-r-[3px] bg-[#3a3a3c] shadow-[inset_1px_0_0_rgba(255,255,255,0.06)]" />
-              </div>
+          <Reveal
+            className="order-2 flex w-full justify-center lg:justify-end"
+            delay={90}
+            rootMargin="-6%"
+          >
+            <div className="w-full max-w-[min(100%,420px)] rounded-[1.875rem] border border-[rgba(214,71,58,0.15)] bg-white/75 p-6 shadow-[0_32px_64px_-40px_rgba(17,17,17,0.18)] ring-1 ring-black/[0.03] backdrop-blur-[8px] sm:p-7 md:p-8">
+              <header className="border-b border-gray-100/90 pb-6 text-center lg:text-left">
+                <p className="font-body text-[0.6875rem] font-bold uppercase tracking-[0.22em] text-[#d6473a]/95 sm:text-xs">
+                  {orderFlowShowcaseCopy.eyebrow}
+                </p>
+                <p className="mt-3 font-heading text-lg font-semibold leading-snug tracking-tight text-brand-black sm:text-xl">
+                  {orderFlowShowcaseCopy.title}
+                </p>
+                <p className="mx-auto mt-2.5 max-w-[20rem] font-body text-sm leading-relaxed text-brand-body-grey lg:mx-0 md:text-[0.9375rem] md:leading-relaxed">
+                  {orderFlowShowcaseCopy.subtitle}
+                </p>
+              </header>
 
-              <div
-                className="relative rounded-[2.85rem] border border-[#2c2c2e] bg-[#1c1c1e] p-[10px] pb-[11px] pt-[18px] shadow-[0_36px_72px_-20px_rgba(0,0,0,0.5),0_0_0_1px_rgba(0,0,0,0.55),inset_0_1px_0_0_rgba(255,255,255,0.12)] transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_44px_80px_-24px_rgba(0,0,0,0.55),0_0_0_1px_rgba(0,0,0,0.55),inset_0_1px_0_0_rgba(255,255,255,0.12)] motion-reduce:hover:translate-y-0"
-              >
-                <div
-                  className="pointer-events-none absolute left-1/2 top-[11px] z-10 h-[27px] w-[min(34%,88px)] -translate-x-1/2 rounded-[13px] bg-black shadow-[inset_0_-1px_2px_rgba(255,255,255,0.06)]"
-                  aria-hidden
-                />
-                <div className="relative overflow-hidden rounded-[2.2rem] bg-black shadow-[inset_0_0_0_1px_rgba(255,255,255,0.09)]">
-                  <img
-                    src={heroImage}
-                    alt="Dhobify app home screen on an iPhone"
-                    decoding="async"
-                    loading="eager"
-                    fetchPriority="high"
-                    className="h-auto w-full object-cover object-top"
-                    width={473}
-                    height={1024}
-                  />
-                  <div
-                    className="pointer-events-none absolute inset-0 rounded-[2.2rem] shadow-[inset_0_1px_3px_rgba(255,255,255,0.07),inset_0_-2px_4px_rgba(0,0,0,0.2)]"
-                    aria-hidden
-                  />
-                </div>
+              <div className="pt-7 md:pt-8">
+                <OrderFlowDemo variant="hero" />
               </div>
-            </figure>
+            </div>
           </Reveal>
         </div>
       </Container>

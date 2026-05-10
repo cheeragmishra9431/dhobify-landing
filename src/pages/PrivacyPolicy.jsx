@@ -19,7 +19,7 @@ function PrivacyPolicy() {
       </p>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           1. Information We Collect
         </h2>
         <p className="mt-3">
@@ -54,7 +54,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           2. How We Use Your Information
         </h2>
         <p className="mt-3">We use your personal information to:</p>
@@ -70,7 +70,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           3. Data Storage and Security
         </h2>
         <p className="mt-3">
@@ -82,7 +82,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           4. Data Sharing
         </h2>
         <p className="mt-3">
@@ -110,7 +110,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           5. Data Retention
         </h2>
         <p className="mt-3">
@@ -122,7 +122,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           6. Your Rights
         </h2>
         <p className="mt-3">You have the right to:</p>
@@ -145,7 +145,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           7. Children&apos;s Privacy
         </h2>
         <p className="mt-3">
@@ -155,7 +155,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           8. Changes to This Policy
         </h2>
         <p className="mt-3">
@@ -165,7 +165,7 @@ function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           9. Contact Us
         </h2>
         <p className="mt-3">

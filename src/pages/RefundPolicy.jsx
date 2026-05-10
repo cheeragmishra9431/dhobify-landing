@@ -18,7 +18,7 @@ function RefundPolicy() {
       </p>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           1. Eligibility for Refunds
         </h2>
         <p className="mt-3">
@@ -55,7 +55,7 @@ function RefundPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           2. Non-Refundable Situations
         </h2>
         <p className="mt-3">Refunds are generally not provided for:</p>
@@ -73,7 +73,7 @@ function RefundPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           3. How to Request a Refund
         </h2>
         <p className="mt-3">To request a refund:</p>
@@ -98,7 +98,7 @@ function RefundPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           4. Refund Processing
         </h2>
         <ul className="mt-3 list-disc space-y-2 pl-6">
@@ -117,7 +117,7 @@ function RefundPolicy() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           5. Contact Us
         </h2>
         <p className="mt-3">For any refund-related queries:</p>

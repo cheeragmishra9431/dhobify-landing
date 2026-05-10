@@ -21,7 +21,16 @@ function ProblemSection() {
         <div className="mt-8 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:mt-10 lg:grid-cols-4 lg:gap-6">
           {painPoints.map((point, index) => (
             <Reveal key={point} delay={80 + index * 70} rootMargin="-6%">
-              <Card variant="emphasis">
+              <Card
+                variant="emphasis"
+                className={
+                  index % 3 === 1
+                    ? 'border-l-brand-warm-orange'
+                    : index % 3 === 2
+                      ? 'border-l-brand-coral'
+                      : ''
+                }
+              >
                 <p className="font-heading text-sm font-bold text-brand-black/50 tabular-nums">
                   {String(index + 1).padStart(2, '0')}
                 </p>
@@ -33,7 +42,9 @@ function ProblemSection() {
           ))}
         </div>
         <Reveal delay={120} className="mt-10 lg:mt-12">
-          <p className="max-w-2xl font-body text-lg text-brand-black leading-relaxed">{transitionStatement}</p>
+          <p className="max-w-2xl border-l-[3px] border-brand-warm-orange bg-brand-warm-orange/5 py-4 pl-5 pr-4 font-body text-lg leading-relaxed text-brand-black md:pr-6">
+            {transitionStatement}
+          </p>
         </Reveal>
       </Container>
     </Section>

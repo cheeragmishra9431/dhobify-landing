@@ -11,10 +11,11 @@ function InvestorSection() {
   return (
     <Section id="investor" background="dark" className="relative scroll-mt-20 overflow-hidden">
       <div className="pointer-events-none absolute -right-[20%] top-0 h-[min(480px,70vw)] w-[min(480px,70vw)] rounded-full bg-brand-yellow/[0.08] blur-3xl motion-safe:animate-seo-float motion-reduce:animate-none" aria-hidden />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-40 w-[min(100%,420px)] bg-gradient-to-t from-brand-yellow/[0.06] to-transparent blur-2xl" aria-hidden />
+      <div className="pointer-events-none absolute -left-[15%] bottom-0 h-[min(380px,65vw)] w-[min(380px,65vw)] rounded-full bg-brand-coral/[0.07] blur-3xl motion-safe:animate-seo-float motion-reduce:animate-none [animation-delay:-5s]" aria-hidden />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-40 w-[min(100%,420px)] bg-gradient-to-t from-brand-yellow/[0.06] via-brand-coral/[0.04] to-transparent blur-2xl" aria-hidden />
       <Container className="relative">
         <Reveal delay={0}>
-          <SectionEyebrow light>{eyebrow}</SectionEyebrow>
+          <SectionEyebrow light className="!text-brand-warm-orange/85">{eyebrow}</SectionEyebrow>
           <h2 className="font-heading text-section-mobile font-bold text-white md:text-section-desktop">
             {sectionHeadline}
           </h2>

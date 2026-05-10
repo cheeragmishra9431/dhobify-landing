@@ -48,6 +48,6 @@ export const orderFlowSteps = [
 
 export const orderFlowShowcaseCopy = {
   eyebrow: 'Inside the app',
-  title: 'From login to doorstep—in a few taps',
-  subtitle: 'Real screens from Dhobify: browse, book, pay, and schedule return delivery.',
+  title: 'From login to doorstep in a few taps',
+  subtitle: 'Real app screens—browse partners, book, pay, and schedule delivery.',
 }

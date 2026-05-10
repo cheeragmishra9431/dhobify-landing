@@ -89,7 +89,7 @@ function ServicesSection() {
             {servicesList.map((service) => (
               <li
                 key={service.name}
-                className="flex min-h-[52px] items-center gap-3 rounded-xl border border-gray-200/80 bg-white px-4 py-3 font-body text-base font-medium text-brand-black shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-0.5 hover:border-brand-yellow/35 hover:shadow-md motion-reduce:hover:translate-y-0"
+                className="flex min-h-[52px] items-center gap-3 rounded-xl border border-gray-200/80 bg-white px-4 py-3 font-body text-base font-medium text-brand-black shadow-sm transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-0.5 hover:border-brand-warm-orange/45 hover:shadow-md hover:shadow-brand-glow-orange/10 motion-reduce:hover:translate-y-0"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-light-grey text-brand-black transition-colors duration-300">
                   {serviceIcons[service.icon]}
@@ -100,7 +100,7 @@ function ServicesSection() {
           </ul>
         </Reveal>
         <Reveal delay={100}>
-          <p className="mt-8 max-w-3xl rounded-xl border border-brand-yellow/25 bg-brand-yellow/10 px-4 py-3 font-body text-base font-semibold leading-relaxed text-brand-black shadow-sm backdrop-blur-sm md:px-5 md:py-4">
+          <p className="mt-8 max-w-3xl rounded-xl border border-brand-warm-orange/25 bg-gradient-to-r from-brand-yellow/12 via-brand-glow-orange/10 to-brand-coral/[0.07] px-4 py-3 font-body text-base font-semibold leading-relaxed text-brand-black shadow-sm shadow-brand-coral/5 backdrop-blur-sm md:px-5 md:py-4">
             {highlightLine}
           </p>
         </Reveal>

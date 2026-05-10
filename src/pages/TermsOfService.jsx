@@ -19,7 +19,7 @@ function TermsOfService() {
       </p>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           1. About Dhobify
         </h2>
         <p className="mt-3">
@@ -30,7 +30,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           2. Eligibility
         </h2>
         <p className="mt-3">
@@ -40,7 +40,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           3. Account Registration
         </h2>
         <ul className="mt-3 list-disc space-y-2 pl-6">
@@ -62,7 +62,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           4. Services
         </h2>
         <ul className="mt-3 list-disc space-y-2 pl-6">
@@ -83,7 +83,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           5. Orders and Payments
         </h2>
         <ul className="mt-3 list-disc space-y-2 pl-6">
@@ -99,7 +99,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           6. Cancellations
         </h2>
         <ul className="mt-3 list-disc space-y-2 pl-6">
@@ -114,7 +114,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           7. User Conduct
         </h2>
         <p className="mt-3">You agree not to:</p>
@@ -127,7 +127,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           8. Account Deletion
         </h2>
         <p className="mt-3">
@@ -138,7 +138,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           9. Limitation of Liability
         </h2>
         <ul className="mt-3 list-disc space-y-2 pl-6">
@@ -160,7 +160,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           10. Modifications
         </h2>
         <p className="mt-3">
@@ -170,7 +170,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           11. Governing Law
         </h2>
         <p className="mt-3">
@@ -181,7 +181,7 @@ function TermsOfService() {
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           12. Contact Us
         </h2>
         <p className="mt-3">

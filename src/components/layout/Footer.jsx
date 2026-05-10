@@ -28,7 +28,7 @@ function Footer() {
               <p className="font-body text-sm text-white/90">{location}</p>
               <a
                 href={`mailto:${contactEmail}`}
-                className="font-body text-sm text-white/90 hover:text-white transition-colors inline-block"
+                className="font-body text-sm text-white/90 hover:text-brand-glow-orange transition-colors inline-block"
               >
                 {contactEmail}
               </a>
@@ -45,7 +45,7 @@ function Footer() {
                 <a
                   key={link.text}
                   href={link.href}
-                  className="font-body text-sm text-white/90 hover:text-white transition-colors"
+                  className="font-body text-sm text-white/90 hover:text-brand-glow-orange transition-colors"
                 >
                   {link.text}
                 </a>
@@ -53,7 +53,7 @@ function Footer() {
                 <Link
                   key={link.text}
                   to={link.href}
-                  className="font-body text-sm text-white/90 hover:text-white transition-colors"
+                  className="font-body text-sm text-white/90 hover:text-brand-glow-orange transition-colors"
                 >
                   {link.text}
                 </Link>

@@ -13,7 +13,7 @@ function Button({
 
   const variantStyles = {
     primary:
-      'bg-brand-yellow text-brand-black hover:bg-brand-yellow-hover hover:shadow-lg hover:shadow-brand-yellow/25 hover:-translate-y-0.5 active:translate-y-0 active:shadow-md motion-reduce:hover:translate-y-0',
+      'bg-brand-yellow text-brand-black hover:bg-brand-yellow-hover hover:shadow-[0_12px_36px_-8px_rgba(250,204,21,0.45),0_8px_24px_-6px_rgba(214,71,58,0.12)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-md motion-reduce:hover:translate-y-0',
     secondary:
       'border-2 border-brand-black text-brand-black bg-transparent hover:bg-brand-black hover:text-white active:bg-brand-black hover:-translate-y-0.5 active:translate-y-0 motion-reduce:hover:translate-y-0',
   }

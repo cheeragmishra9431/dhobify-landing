@@ -85,7 +85,7 @@ function PartnerSection() {
               <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
                 {sectionHeadline}
               </h2>
-              <p className="mt-5 font-body text-base text-brand-body-grey leading-relaxed sm:mt-6 sm:text-lg">
+              <p className="mt-5 font-body text-base leading-relaxed text-brand-warm-orange/90 sm:mt-6 sm:text-lg">
                 {description}
               </p>
               <ul className="mt-8 space-y-3">
@@ -105,11 +105,11 @@ function PartnerSection() {
           <Reveal delay={110} rootMargin="-8%">
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-gray-200 bg-white p-5 shadow-[0_20px_50px_-28px_rgba(17,17,17,0.12)] ring-1 ring-gray-900/[0.04] transition-[transform,box-shadow] duration-300 ease-out hover:shadow-[0_28px_56px_-28px_rgba(17,17,17,0.14)] sm:p-7 md:p-8"
+              className="rounded-2xl border border-[rgba(214,71,58,0.22)] bg-white p-5 shadow-[0_20px_50px_-28px_rgba(17,17,17,0.12),0_0_0_1px_rgba(214,71,58,0.1)] transition-[transform,box-shadow,border-color] duration-300 ease-out hover:border-[rgba(214,71,58,0.35)] hover:shadow-[0_28px_56px_-28px_rgba(17,17,17,0.14),0_0_0_1px_rgba(214,71,58,0.14)] sm:p-7 md:p-8"
               noValidate
             >
             <p className="font-heading text-lg font-bold text-brand-black">Partner application</p>
-            <p className="mt-1 font-body text-sm text-brand-body-grey">
+            <p className="mt-1 font-body text-sm text-[#d6473a]/90">
               Short form — we usually reply within a few business days.
             </p>
             <div className="mt-6 space-y-5">

@@ -11,13 +11,13 @@ function Support() {
         path: '/support',
       }}
     >
-      <p className="text-lg">
+      <p className="border-l-[3px] border-brand-warm-orange pl-4 text-lg leading-relaxed text-brand-warm-orange/95">
         We&apos;re here to help! Reach out to us through any of the following
         channels:
       </p>
 
-      <section className="rounded-card border border-gray-200 bg-brand-light-grey p-6 md:p-8">
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+      <section className="rounded-card border border-brand-coral/20 bg-brand-light-grey p-6 md:p-8">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           WhatsApp (Preferred)
         </h2>
         <p className="mt-3">
@@ -40,28 +40,28 @@ function Support() {
           </svg>
           Chat on WhatsApp
         </a>
-        <p className="mt-3 text-sm text-brand-body-grey">
+        <p className="mt-3 text-sm font-medium text-brand-warm-orange/90">
           Available Monday–Saturday, 9:00 AM – 8:00 PM IST
         </p>
       </section>
 
-      <section className="rounded-card border border-gray-200 bg-brand-light-grey p-6 md:p-8">
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+      <section className="rounded-card border border-brand-coral/20 bg-brand-light-grey p-6 md:p-8">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           Email
         </h2>
         <a
           href="mailto:support@dhobify.in"
-          className="mt-3 inline-block text-lg font-medium text-brand-black underline hover:text-brand-yellow transition-colors"
+          className="mt-3 inline-block text-lg font-medium text-brand-black underline transition-colors hover:text-brand-warm-orange"
         >
           support@dhobify.in
         </a>
-        <p className="mt-2 text-sm text-brand-body-grey">
+        <p className="mt-2 text-sm text-brand-warm-orange/85">
           We respond to emails within 24 hours.
         </p>
       </section>
 
       <section>
-        <h2 className="font-heading text-xl font-semibold text-brand-black md:text-2xl">
+        <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-xl font-semibold text-brand-black md:text-2xl">
           Common Questions
         </h2>
         <div className="mt-4 space-y-4">
@@ -93,9 +93,9 @@ function Support() {
           ].map((item) => (
             <div
               key={item.q}
-              className="rounded-lg border border-gray-200 bg-white p-4 md:p-5"
+              className="rounded-lg border border-brand-coral/15 bg-white p-4 md:p-5"
             >
-              <h3 className="font-heading text-base font-semibold text-brand-black">
+              <h3 className="font-heading text-base font-semibold text-brand-warm-orange">
                 {item.q}
               </h3>
               <p className="mt-1.5 text-sm">{item.a}</p>

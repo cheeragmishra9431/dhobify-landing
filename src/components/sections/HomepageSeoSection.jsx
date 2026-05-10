@@ -40,12 +40,12 @@ function HomepageSeoSection() {
     <Section
       id="book-pickup"
       background="white"
-      className="seo-book-pickup scroll-mt-20 relative overflow-hidden border-y border-gray-200/70 !bg-gradient-to-br from-slate-50 via-white to-amber-50/[0.55]"
+      className="seo-book-pickup scroll-mt-20 relative overflow-hidden border-y border-gray-200/70 !bg-gradient-to-br from-slate-50 via-white to-brand-gold/[0.08]"
     >
       {/* Decorative layers */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="absolute -right-[min(28%,420px)] -top-[min(18%,200px)] h-[min(560px,90vw)] w-[min(560px,90vw)] rounded-full bg-gradient-to-br from-brand-yellow/[0.22] via-amber-200/20 to-transparent blur-3xl motion-safe:animate-seo-float" />
-        <div className="absolute -bottom-[30%] -left-[15%] h-[min(400px,70vw)] w-[min(400px,70vw)] rounded-full bg-gradient-to-tr from-slate-200/40 via-white/30 to-transparent blur-3xl" />
+        <div className="absolute -right-[min(28%,420px)] -top-[min(18%,200px)] h-[min(560px,90vw)] w-[min(560px,90vw)] rounded-full bg-gradient-to-br from-brand-yellow/[0.22] via-brand-glow-orange/15 to-brand-coral/[0.08] blur-3xl motion-safe:animate-seo-float" />
+        <div className="absolute -bottom-[30%] -left-[15%] h-[min(400px,70vw)] w-[min(400px,70vw)] rounded-full bg-gradient-to-tr from-brand-coral/[0.06] via-slate-200/35 to-transparent blur-3xl" />
         <div
           className="absolute inset-0 opacity-[0.35] motion-safe:opacity-40"
           style={{
@@ -53,24 +53,24 @@ function HomepageSeoSection() {
             backgroundSize: '24px 24px',
           }}
         />
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-yellow/35 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-warm-orange/40 to-transparent" />
       </div>
 
       <Container className="relative z-10">
         <div className="motion-safe:animate-seo-in delay-75 motion-reduce:animate-none">
-          <SectionEyebrow className="text-brand-black/55">{eyebrow}</SectionEyebrow>
+          <SectionEyebrow>{eyebrow}</SectionEyebrow>
         </div>
 
         <h2 className="motion-safe:animate-seo-in delay-100 motion-reduce:animate-none mt-2 max-w-[min(100%,42rem)] font-heading text-3xl font-bold tracking-tight text-brand-black sm:text-4xl md:mt-1 md:text-[2.35rem] md:leading-[1.15] lg:text-[2.5rem]">
           Laundry services Bangalore commuters actually finish on time
         </h2>
-        <p className="motion-safe:animate-seo-fade delay-200 motion-reduce:animate-none mt-4 max-w-2xl text-base font-medium text-brand-black/45 md:text-lg">
+        <p className="motion-safe:animate-seo-fade delay-200 motion-reduce:animate-none mt-4 max-w-2xl text-base font-medium text-brand-warm-orange/90 md:text-lg">
           Clear choices, honest logistics, and neighbourhood pages built for how you search.
         </p>
 
         <div className="mt-10 grid gap-10 lg:mt-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:items-start">
           {/* Prose column */}
-          <div className="motion-safe:animate-seo-in delay-150 motion-reduce:animate-none space-y-6 rounded-2xl border border-gray-200/50 bg-white/50 p-6 shadow-sm shadow-gray-900/[0.03] backdrop-blur-[2px] sm:p-8 md:space-y-7">
+          <div className="motion-safe:animate-seo-in delay-150 motion-reduce:animate-none space-y-6 rounded-2xl border border-brand-coral/18 bg-white/50 p-6 shadow-sm shadow-brand-coral/[0.06] ring-1 ring-brand-coral/10 backdrop-blur-[2px] sm:p-8 md:space-y-7">
             <p className="max-w-prose text-[17px] leading-[1.75] text-brand-body-grey md:text-lg md:leading-relaxed">
               When someone types <strong className="font-semibold text-brand-black">laundry near me</strong>, they
               rarely want another tab of random listings—they want a calm decision. Dhobify is a laundry and dry-cleaning
@@ -96,11 +96,11 @@ function HomepageSeoSection() {
 
           {/* Sidebar: area card + trust */}
           <div className="flex flex-col gap-6 lg:gap-7">
-            <div className="motion-safe:animate-seo-in delay-200 motion-reduce:animate-none group/card relative overflow-hidden rounded-2xl border border-gray-200/60 bg-white/85 p-1 shadow-[0_20px_50px_-24px_rgba(17,17,17,0.22)] ring-1 ring-gray-900/[0.04] backdrop-blur-md">
+            <div className="motion-safe:animate-seo-in delay-200 motion-reduce:animate-none group/card relative overflow-hidden rounded-2xl border border-brand-coral/18 bg-white/85 p-1 shadow-[0_20px_50px_-24px_rgba(17,17,17,0.22)] ring-1 ring-brand-coral/12 backdrop-blur-md">
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-yellow/[0.07] via-transparent to-slate-100/50 opacity-0 transition-opacity duration-500 group-hover/card:opacity-100" />
               <div className="relative rounded-[0.9rem] bg-white/95 p-6 sm:p-7">
                 <div className="mb-5 flex items-center gap-3">
-                  <span className="h-10 w-1 shrink-0 rounded-full bg-gradient-to-b from-brand-yellow to-amber-400/80 shadow-sm shadow-brand-yellow/30" />
+                  <span className="h-10 w-1 shrink-0 rounded-full bg-gradient-to-b from-brand-yellow via-brand-warm-orange to-brand-coral shadow-sm shadow-brand-coral/25" />
                   <p className="font-heading text-[0.65rem] font-bold uppercase tracking-[0.22em] text-brand-black/45">
                     Local guides
                   </p>
@@ -117,7 +117,7 @@ function HomepageSeoSection() {
                     <li key={to}>
                       <Link
                         to={to}
-                        className="group flex items-center justify-between gap-3 rounded-xl border border-gray-100 bg-gradient-to-r from-gray-50/90 to-white px-4 py-3.5 text-left shadow-sm transition-all duration-300 hover:border-brand-yellow/50 hover:shadow-md hover:shadow-brand-yellow/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow"
+                        className="group flex items-center justify-between gap-3 rounded-xl border border-gray-100 bg-gradient-to-r from-gray-50/90 to-white px-4 py-3.5 text-left shadow-sm transition-all duration-300 hover:border-brand-warm-orange/40 hover:shadow-md hover:shadow-brand-coral/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow"
                       >
                         <span className="min-w-0 flex-1">
                           <span className="block font-heading text-[15px] font-bold text-brand-black transition-colors group-hover:text-brand-black md:text-base">
@@ -125,7 +125,7 @@ function HomepageSeoSection() {
                           </span>
                           <span className="mt-0.5 block text-xs text-brand-body-grey/90">{hint}</span>
                         </span>
-                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-light-grey/90 text-brand-black transition-all duration-300 group-hover:bg-brand-yellow group-hover:text-brand-black">
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-light-grey/90 text-brand-black transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-brand-yellow group-hover:to-brand-glow-orange group-hover:text-brand-black group-hover:shadow-md group-hover:shadow-brand-coral/15">
                           <ChevronRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5" />
                         </span>
                       </Link>
@@ -169,7 +169,7 @@ function HomepageSeoSection() {
         </div>
 
         <div className="motion-safe:animate-seo-in delay-200 motion-reduce:animate-none relative mt-12 max-w-4xl space-y-6 border-t border-gray-200/60 pt-10 md:mt-14 md:pt-12">
-          <div className="absolute inset-x-0 -top-px mx-auto h-px max-w-md bg-gradient-to-r from-transparent via-brand-yellow/50 to-transparent" aria-hidden />
+          <div className="absolute inset-x-0 -top-px mx-auto h-px max-w-md bg-gradient-to-r from-transparent via-brand-glow-orange/45 to-transparent" aria-hidden />
           <p className="text-[17px] leading-[1.75] text-brand-body-grey md:text-lg md:leading-relaxed">
             We also surface dedicated{' '}
             <Link

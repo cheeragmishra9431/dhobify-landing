@@ -16,7 +16,7 @@ function MobileConversionBar() {
       <div className="mx-auto flex max-w-lg items-stretch gap-2">
         <Link
           to="/#book-pickup"
-          className="flex min-h-[48px] flex-1 items-center justify-center rounded-lg bg-brand-yellow px-3 font-heading text-sm font-bold text-brand-black shadow-sm transition-colors hover:bg-brand-yellow-hover"
+          className="flex min-h-[48px] flex-1 items-center justify-center rounded-lg bg-brand-yellow px-3 font-heading text-sm font-bold text-brand-black shadow-md shadow-brand-coral/15 transition-[colors,box-shadow,transform] motion-safe:active:scale-[0.98] hover:bg-brand-yellow-hover hover:shadow-lg hover:shadow-brand-warm-orange/20 motion-reduce:active:scale-100"
         >
           Book pickup
         </Link>

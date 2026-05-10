@@ -39,7 +39,7 @@ function FeaturedPartnersSection() {
           <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
             Featured laundry partners
           </h2>
-          <p className="mt-4 max-w-2xl font-body text-base text-brand-body-grey leading-relaxed">
+          <p className="mt-4 max-w-2xl font-body text-base leading-relaxed text-brand-warm-orange/90 md:text-lg">
             Each profile opens a full store page with services, pickup notes, and indicative pricing so you can compare
             before you book on Dhobify.
           </p>
@@ -49,17 +49,17 @@ function FeaturedPartnersSection() {
             {PARTNERS.map((p) => (
               <li
                 key={p.name}
-                className="rounded-card border border-gray-200 bg-brand-light-grey/25 p-5 transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-brand-yellow/40 hover:bg-white hover:shadow-lg motion-reduce:hover:translate-y-0 md:p-6"
+                className="rounded-card border border-gray-200 bg-brand-light-grey/25 p-5 transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-brand-warm-orange/45 hover:bg-white hover:shadow-lg hover:shadow-brand-gold/10 motion-reduce:hover:translate-y-0 md:p-6"
               >
                 <h3 className="font-heading text-lg font-bold text-brand-black">
-                  <Link to={p.href} className="hover:underline hover:decoration-brand-yellow hover:underline-offset-4">
+                  <Link to={p.href} className="hover:underline hover:decoration-brand-warm-orange hover:underline-offset-4">
                     {p.name}
                   </Link>
                 </h3>
                 <p className="mt-2 font-body text-sm text-brand-body-grey leading-relaxed md:text-base">{p.description}</p>
                 <Link
                   to={p.href}
-                  className="mt-4 inline-block text-sm font-semibold text-brand-black underline decoration-brand-yellow decoration-2 underline-offset-4 transition-colors hover:text-brand-body-grey"
+                  className="mt-4 inline-block text-sm font-semibold text-brand-black underline decoration-brand-warm-orange decoration-2 underline-offset-4 transition-colors hover:text-brand-body-grey"
                 >
                   View {p.name}
                 </Link>
@@ -68,19 +68,25 @@ function FeaturedPartnersSection() {
           </ul>
         </Reveal>
         <Reveal delay={40} className="mt-10">
-          <p className="font-body text-sm text-brand-body-grey">
+          <p className="font-body text-sm text-brand-warm-orange/85">
             Browsing by area? Start with{' '}
-            <Link to="/laundry-in-hsr-layout" className="font-semibold text-brand-black underline-offset-2 hover:underline">
+            <Link
+              to="/laundry-in-hsr-layout"
+              className="font-semibold text-brand-black underline-offset-2 transition-colors hover:text-brand-warm-orange hover:underline"
+            >
               laundry in HSR Layout
             </Link>
             ,{' '}
-            <Link to="/laundry-in-bellandur" className="font-semibold text-brand-black underline-offset-2 hover:underline">
+            <Link
+              to="/laundry-in-bellandur"
+              className="font-semibold text-brand-black underline-offset-2 transition-colors hover:text-brand-warm-orange hover:underline"
+            >
               laundry in Bellandur
             </Link>
             , or{' '}
             <Link
               to="/dry-cleaning-in-hsr-layout"
-              className="font-semibold text-brand-black underline-offset-2 hover:underline"
+              className="font-semibold text-brand-black underline-offset-2 transition-colors hover:text-brand-warm-orange hover:underline"
             >
               dry cleaning in HSR Layout
             </Link>

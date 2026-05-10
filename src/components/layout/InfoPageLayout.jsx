@@ -29,7 +29,7 @@ function InfoPageLayout({ title, lastUpdated, seo, children }) {
             </Link>
             <Link
               to="/"
-              className="flex items-center gap-1.5 font-body text-sm font-medium text-brand-black transition-colors hover:text-brand-yellow"
+              className="flex items-center gap-1.5 font-body text-sm font-medium text-brand-black transition-colors hover:text-brand-warm-orange"
             >
               <svg
                 width="16"
@@ -53,9 +53,13 @@ function InfoPageLayout({ title, lastUpdated, seo, children }) {
 
       <main className="py-12 md:py-20">
         <Container className="max-w-3xl">
-          <h1 className="font-heading text-3xl font-bold text-brand-black md:text-4xl">{title}</h1>
+          <h1 className="font-heading text-3xl font-bold tracking-tight text-brand-black md:text-4xl">
+            {title}
+          </h1>
           {lastUpdated && (
-            <p className="mt-2 font-body text-sm text-brand-body-grey">Last updated: {lastUpdated}</p>
+            <p className="mt-2 font-body text-sm font-medium text-brand-warm-orange/90">
+              Last updated: {lastUpdated}
+            </p>
           )}
           <div className="mt-10 space-y-8 font-body text-base leading-relaxed text-brand-body-grey">{children}</div>
         </Container>

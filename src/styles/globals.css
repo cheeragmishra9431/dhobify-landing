@@ -60,10 +60,21 @@
     list-style: none;
   }
 
-  /* Focus styles for accessibility */
-  :focus-visible {
+  /* Focus ring — skip native inputs; fields use InputField / explicit brand focus */
+  :focus-visible:not(input):not(textarea):not(select) {
     outline: 2px solid #FACC15;
     outline-offset: 2px;
+  }
+
+  /*
+   * Logo palette (matches tailwind.config.js) — space-separated RGB so Tailwind
+   * opacity modifiers (e.g. bg-brand-coral/20) resolve in all environments.
+   */
+  :root {
+    --brand-coral: 214 71 58;
+    --brand-warm-orange: 230 124 60;
+    --brand-gold: 244 160 36;
+    --brand-glow-orange: 241 152 37;
   }
 }
 
@@ -77,9 +88,11 @@
     background: linear-gradient(
       90deg,
       #facc15 0%,
-      #fef9c3 35%,
+      #f4a024 22%,
+      #fef9c3 40%,
       #ffffff 50%,
-      #fef9c3 65%,
+      #f19825 58%,
+      #fde68a 75%,
       #facc15 100%
     );
     background-size: 180% auto;
@@ -99,7 +112,9 @@
     background: linear-gradient(
       120deg,
       transparent 0%,
-      rgba(250, 204, 21, 0.08) 50%,
+      rgba(250, 204, 21, 0.07) 40%,
+      rgba(241, 152, 37, 0.06) 55%,
+      rgba(214, 71, 58, 0.05) 70%,
       transparent 100%
     );
     animation: shine-soft 10s ease-in-out infinite;

@@ -37,18 +37,18 @@ function AreaLaundryPage({ area }) {
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-brand-light-grey/50 to-white" aria-hidden />
           <Container className="relative">
             <nav className="mb-6 text-sm text-brand-body-grey" aria-label="Breadcrumb">
-              <Link to="/" className="text-brand-black underline-offset-2 hover:underline">
+              <Link to="/" className="text-brand-black underline-offset-2 transition-colors hover:text-brand-warm-orange hover:underline">
                 Home
               </Link>
-              <span className="mx-2" aria-hidden>
+              <span className="mx-2 text-brand-warm-orange/60" aria-hidden>
                 /
               </span>
-              <span className="text-brand-black/80">{area.breadcrumbCurrentLabel}</span>
+              <span className="font-medium text-brand-warm-orange">{area.breadcrumbCurrentLabel}</span>
             </nav>
             <h1 className="font-heading text-hero-mobile font-extrabold leading-tight text-brand-black md:text-hero-desktop">
               {area.h1}
             </h1>
-            <p className="mt-4 max-w-3xl font-body text-base leading-relaxed text-brand-body-grey md:mt-6 md:text-lg">
+            <p className="mt-4 max-w-3xl border-l-[3px] border-brand-warm-orange pl-5 font-body text-base leading-relaxed text-brand-body-grey md:mt-6 md:text-lg">
               {area.introParagraphs[0]}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -73,7 +73,7 @@ function AreaLaundryPage({ area }) {
           <Container>
             <h2
               id="local-guide-heading"
-              className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop"
+              className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop"
             >
               {`Local laundry, dry cleaning, and laundry pickup ${area.name} residents use`}
             </h2>
@@ -107,7 +107,7 @@ function AreaLaundryPage({ area }) {
           className="scroll-mt-24 md:scroll-mt-28"
         >
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               Our partner laundry stores in {area.name}
             </h2>
             <p className="mt-4 max-w-3xl font-body text-base leading-relaxed text-brand-body-grey">
@@ -168,7 +168,7 @@ function AreaLaundryPage({ area }) {
 
         <Section background="white">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               {area.pricing.headline}
             </h2>
             <p className="mt-3 font-body text-brand-body-grey">Typical local ranges; confirm at checkout in the app.</p>
@@ -203,7 +203,7 @@ function AreaLaundryPage({ area }) {
 
         <Section background="grey" id="how-it-works">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               {area.howItWorks.headline}
             </h2>
             <ol className="mt-10 grid list-decimal gap-6 pl-5 marker:font-heading marker:font-bold marker:text-brand-black md:grid-cols-2">
@@ -219,7 +219,7 @@ function AreaLaundryPage({ area }) {
 
         <Section background="white" id="faq">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               Frequently asked questions
             </h2>
             <div className="mt-8 space-y-8">

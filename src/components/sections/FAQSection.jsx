@@ -9,8 +9,12 @@ function FAQSection() {
   const { eyebrow, sectionHeadline, items } = landingContent.faq
 
   return (
-    <Section background="white" className="relative">
-      <Container>
+    <Section background="white" className="relative overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white via-white to-brand-gold/[0.04]"
+        aria-hidden
+      />
+      <Container className="relative">
         <Reveal delay={0}>
           <SectionEyebrow>{eyebrow}</SectionEyebrow>
           <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">

@@ -4,6 +4,10 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'border-l-brand-warm-orange',
+    'border-l-brand-coral',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -19,6 +23,10 @@ export default {
           white: '#FFFFFF',
           'light-grey': '#F5F5F5',
           'body-grey': '#4B5563',
+          coral: 'rgb(var(--brand-coral) / <alpha-value>)',
+          'warm-orange': 'rgb(var(--brand-warm-orange) / <alpha-value>)',
+          gold: 'rgb(var(--brand-gold) / <alpha-value>)',
+          'glow-orange': 'rgb(var(--brand-glow-orange) / <alpha-value>)',
         },
         semantic: {
           success: '#15803d',
@@ -49,12 +57,27 @@ export default {
           '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
           '50%': { transform: 'translate(-2%, 3%) scale(1.03)' },
         },
+        navBarSlide: {
+          '0%': { opacity: '0', transform: 'translateY(-14px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        navLogoIn: {
+          '0%': { opacity: '0', transform: 'scale(0.92) translateY(6px)' },
+          '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+        },
+        navAccentPulse: {
+          '0%, 100%': { opacity: '0.75', filter: 'brightness(1)' },
+          '50%': { opacity: '1', filter: 'brightness(1.15)' },
+        },
       },
       animation: {
         'seo-in': 'seoFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both',
         'seo-in-fast': 'seoFadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both',
         'seo-fade': 'seoFadeIn 0.8s ease-out both',
         'seo-float': 'seoFloat 18s ease-in-out infinite',
+        'nav-bar-in': 'navBarSlide 0.55s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'nav-logo': 'navLogoIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 75ms both',
+        'nav-accent': 'navAccentPulse 2.8s ease-in-out infinite',
       },
       maxWidth: {
         content: '1200px',

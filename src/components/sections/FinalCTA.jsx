@@ -11,9 +11,17 @@ function FinalCTA() {
   return (
     <Section background="dark" className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_55%_at_50%_-10%,rgba(250,204,21,0.14),transparent_55%)]" aria-hidden />
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_100%_100%,rgba(214,71,58,0.12),transparent_50%)]"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_40%_at_0%_80%,rgba(241,152,37,0.08),transparent_45%)]"
+        aria-hidden
+      />
       <Container className="relative">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <SectionEyebrow light>{eyebrow}</SectionEyebrow>
+          <SectionEyebrow light className="!text-brand-glow-orange/75">{eyebrow}</SectionEyebrow>
           <h2 className="font-heading text-section-mobile font-bold text-white md:text-section-desktop">
             {headline}
           </h2>

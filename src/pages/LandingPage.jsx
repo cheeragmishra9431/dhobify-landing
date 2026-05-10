@@ -9,7 +9,6 @@ import HomepageSeoSection from '../components/sections/HomepageSeoSection'
 import TrustDeliverySection from '../components/sections/TrustDeliverySection'
 import ProblemSection from '../components/sections/ProblemSection'
 import HowItWorks from '../components/sections/HowItWorks'
-import OrderFlowShowcase from '../components/sections/OrderFlowShowcase'
 import ServicesSection from '../components/sections/ServicesSection'
 import WhyDhobify from '../components/sections/WhyDhobify'
 import FeaturedPartnersSection from '../components/sections/FeaturedPartnersSection'
@@ -44,7 +43,6 @@ function LandingPage() {
         <TrustDeliverySection />
         <ProblemSection />
         <HowItWorks />
-        <OrderFlowShowcase />
         <ServicesSection />
         <WhyDhobify />
         <FeaturedPartnersSection />

@@ -7,7 +7,7 @@ import { landingContent } from '../../data/landingContent'
 function StepIcon({ number }) {
   return (
     <div
-      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-yellow font-heading text-lg font-bold text-brand-black shadow-md ring-1 ring-brand-black/5 transition-transform duration-300 ease-out motion-safe:group-hover:scale-105"
+      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-yellow via-brand-glow-orange to-brand-warm-orange font-heading text-lg font-bold text-brand-black shadow-md shadow-brand-coral/20 ring-2 ring-white/60 transition-transform duration-300 ease-out motion-safe:group-hover:scale-105"
       aria-hidden
     >
       {number}
@@ -30,7 +30,7 @@ function HowItWorks() {
         <div className="mt-8 grid gap-8 md:mt-10 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-6">
           {steps.map((step, index) => (
             <Reveal key={step.title} delay={75 + index * 70}>
-              <div className="group flex gap-4 rounded-card border border-gray-100 bg-brand-light-grey/30 p-5 transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-brand-yellow/35 hover:bg-white hover:shadow-lg motion-reduce:hover:translate-y-0 md:flex-col md:p-6">
+              <div className="group flex gap-4 rounded-card border border-gray-100 bg-brand-light-grey/30 p-5 transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-brand-warm-orange/40 hover:bg-white hover:shadow-lg hover:shadow-brand-coral/10 motion-reduce:hover:translate-y-0 md:flex-col md:p-6">
                 <StepIcon number={index + 1} />
                 <div className="min-w-0">
                   <h3 className="font-heading text-lg font-bold text-brand-black leading-snug">

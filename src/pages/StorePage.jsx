@@ -35,32 +35,32 @@ function StorePageBody({ store }) {
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-brand-light-grey/50 to-white" aria-hidden />
           <Container className="relative">
             <nav className="mb-6 text-sm text-brand-body-grey" aria-label="Breadcrumb">
-              <Link to="/" className="text-brand-black underline-offset-2 hover:underline">
+              <Link to="/" className="text-brand-black underline-offset-2 transition-colors hover:text-brand-warm-orange hover:underline">
                 Home
               </Link>
-              <span className="mx-2" aria-hidden>
+              <span className="mx-2 text-brand-warm-orange/60" aria-hidden>
                 /
               </span>
               {store.linkedAreaPaths?.[0] && (
                 <>
                   <Link
                     to={store.linkedAreaPaths[0]}
-                    className="text-brand-black underline-offset-2 hover:underline"
+                    className="text-brand-black underline-offset-2 transition-colors hover:text-brand-warm-orange hover:underline"
                   >
                     Laundry in {store.areaLabel.split(',')[0]?.trim()}
                   </Link>
-                  <span className="mx-2" aria-hidden>
+                  <span className="mx-2 text-brand-warm-orange/60" aria-hidden>
                     /
                   </span>
                 </>
               )}
-              <span className="text-brand-black/80">{store.name}</span>
+              <span className="font-medium text-brand-warm-orange">{store.name}</span>
             </nav>
             <h1 className="font-heading text-hero-mobile font-extrabold leading-tight text-brand-black md:text-hero-desktop">
               {store.name}
             </h1>
-            <p className="mt-2 font-body text-sm font-medium text-brand-black/70 md:text-base">{store.areaLabel}</p>
-            <p className="mt-4 max-w-3xl font-body text-base leading-relaxed text-brand-body-grey md:mt-6 md:text-lg">
+            <p className="mt-2 font-body text-sm font-medium text-brand-warm-orange md:text-base">{store.areaLabel}</p>
+            <p className="mt-4 max-w-3xl border-l-[3px] border-brand-warm-orange pl-5 font-body text-base leading-relaxed text-brand-body-grey md:mt-6 md:text-lg">
               {store.heroTagline}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -76,7 +76,7 @@ function StorePageBody({ store }) {
 
         <Section background="white" aria-labelledby="store-about-heading">
           <Container>
-            <h2 id="store-about-heading" className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 id="store-about-heading" className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               About this partner
             </h2>
             <div className="prose-article mt-6 max-w-3xl space-y-4 font-body text-base leading-relaxed text-brand-body-grey">
@@ -89,7 +89,7 @@ function StorePageBody({ store }) {
 
         <Section background="grey">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">Services</h2>
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">Services</h2>
             <ul className="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2">
               {store.services.map((s) => (
                 <li key={s.id} className="rounded-card border border-gray-200 bg-white p-5">
@@ -103,7 +103,7 @@ function StorePageBody({ store }) {
 
         <Section background="white">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               {store.pickup.headline}
             </h2>
             <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-brand-body-grey">
@@ -116,7 +116,7 @@ function StorePageBody({ store }) {
 
         <Section background="grey">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               {store.pricing.headline}
             </h2>
             <div className="mt-8 overflow-x-auto rounded-card border border-gray-200 bg-white">
@@ -149,7 +149,7 @@ function StorePageBody({ store }) {
 
         <Section background="white">
           <Container>
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               Customer reviews
             </h2>
             <ul className="mt-8 grid list-none gap-4 p-0 md:grid-cols-2">
@@ -168,7 +168,7 @@ function StorePageBody({ store }) {
 
         <Section background="grey" className="pb-16 md:pb-20">
           <Container className="text-center">
-            <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
+            <h2 className="border-l-[3px] border-brand-warm-orange pl-4 font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
               Book {store.name} on Dhobify
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-body text-brand-body-grey">

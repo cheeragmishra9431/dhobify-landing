@@ -12,7 +12,7 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
           aria-expanded={isOpen}
           aria-controls={`accordion-panel-${id}`}
           onClick={() => onToggle(index)}
-          className="flex min-h-[44px] w-full items-center justify-between px-5 py-6 text-left font-body text-base font-medium text-brand-black transition-[color,background-color] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-brand-light-grey/30 hover:text-brand-black focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-inset"
+          className="flex min-h-[44px] w-full items-center justify-between px-5 py-6 text-left font-body text-base font-medium text-brand-black transition-[color,background-color] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-brand-warm-orange/10 hover:text-brand-black focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-coral focus-visible:ring-inset"
         >
           {question}
           <span

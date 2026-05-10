@@ -6,48 +6,49 @@ import { landingContent } from '../../data/landingContent'
 import heroImage from '../../assets/images/hero-mockup.jpg'
 
 function HeroSection() {
-  const { headline, subheadline, supportingLine, secondaryCtas } =
+  const { headline, subheadline, supportingLine, primaryCta, secondaryCta } =
     landingContent.hero
 
   return (
-    <Section background="white" className="relative overflow-hidden pt-10 pb-12 md:pt-16 md:pb-20 lg:py-24">
-      {/* Background: subtle gradient */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-brand-light-grey/30" aria-hidden />
+    <Section
+      background="white"
+      className="hero-section relative overflow-hidden scroll-mt-20 pt-8 pb-12 md:pt-12 md:pb-20 lg:py-24"
+    >
+      <div className="pointer-events-none absolute inset-0" aria-hidden>
+        <div className="absolute -right-[20%] top-[-10%] h-[min(420px,50vw)] w-[min(420px,90vw)] rounded-full bg-brand-yellow/[0.07]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-brand-light-grey/25" />
       </div>
 
       <Container className="relative">
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 lg:items-center">
-          {/* Content column - first on mobile, left on desktop */}
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <div className="order-1">
-            <h1 className="font-heading text-hero-mobile font-extrabold text-brand-black leading-tight md:text-hero-desktop lg:text-[4rem]">
+            <h1 className="font-heading text-hero-mobile font-extrabold text-brand-black leading-tight md:text-hero-desktop lg:text-hero-display">
               {headline}
             </h1>
             <p className="mt-4 font-body text-base text-brand-body-grey leading-relaxed max-w-xl md:mt-6 md:text-lg">
               {subheadline}
             </p>
-            <p className="mt-3 font-body text-sm text-brand-body-grey md:mt-4">
-              <span className="inline-block rounded-full bg-brand-yellow px-3 py-1 font-semibold text-brand-black">
+            <p className="mt-4 md:mt-5">
+              <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-brand-light-grey/90 px-3 py-2 font-body text-sm font-medium text-brand-black shadow-sm">
+                <span
+                  className="h-2 w-2 shrink-0 rounded-full bg-brand-yellow ring-2 ring-brand-yellow/40"
+                  aria-hidden
+                />
                 {supportingLine}
               </span>
             </p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 md:mt-8 md:gap-4">
-              {secondaryCtas.map((cta) => (
-                <Button
-                  key={cta}
-                  href={cta === 'Become a Partner' ? '#partner' : undefined}
-                  variant="primary"
-                  size="lg"
-                >
-                  {cta}
-                </Button>
-              ))}
+            <div className="mt-6 flex w-full max-w-xl flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-3">
+              <Button href={primaryCta.href} variant="primary" size="lg" className="w-full min-h-[48px] sm:w-auto sm:min-w-[200px]">
+                {primaryCta.label}
+              </Button>
+              <Button href={secondaryCta.href} variant="secondary" size="lg" className="w-full min-h-[48px] sm:w-auto sm:min-w-[200px]">
+                {secondaryCta.label}
+              </Button>
             </div>
           </div>
 
-          <div className="order-2 flex items-center justify-center px-3 sm:px-4 lg:justify-end">
+          <div className="order-2 flex items-center justify-center px-2 sm:px-4 lg:justify-end">
             <figure className="relative m-0 w-full max-w-[min(100%,280px)] shrink-0">
-              {/* Side controls (iPhone-style) */}
               <div
                 className="pointer-events-none absolute left-0 top-[26%] z-20 flex -translate-x-[2px] flex-col gap-2"
                 aria-hidden
@@ -62,11 +63,9 @@ function HeroSection() {
                 <div className="h-16 w-[3px] rounded-r-[3px] bg-[#3a3a3c] shadow-[inset_1px_0_0_rgba(255,255,255,0.06)]" />
               </div>
 
-              {/* Chassis + display */}
               <div
                 className="relative rounded-[2.85rem] border border-[#2c2c2e] bg-[#1c1c1e] p-[10px] pb-[11px] pt-[18px] shadow-[0_36px_72px_-20px_rgba(0,0,0,0.5),0_0_0_1px_rgba(0,0,0,0.55),inset_0_1px_0_0_rgba(255,255,255,0.12)]"
               >
-                {/* Dynamic Island (Pro / modern iPhone) */}
                 <div
                   className="pointer-events-none absolute left-1/2 top-[11px] z-10 h-[27px] w-[min(34%,88px)] -translate-x-1/2 rounded-[13px] bg-black shadow-[inset_0_-1px_2px_rgba(255,255,255,0.06)]"
                   aria-hidden

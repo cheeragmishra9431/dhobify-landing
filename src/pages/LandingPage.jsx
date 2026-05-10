@@ -20,9 +20,9 @@ function LandingPage() {
   return (
     <>
       <SeoHead title={HOME_TITLE} description={HOME_DESC} path="/" />
-      <div className="announcement-banner bg-brand-black text-center py-2.5 px-4 relative overflow-hidden">
-        <span className="relative z-10 font-heading text-sm md:text-base font-bold tracking-widest uppercase">
-          <span className="banner-text">🚀 Launching in MAY 2026</span>
+      <div className="announcement-banner announcement-banner--subtle-shine relative overflow-hidden bg-brand-black px-4 py-2.5 text-center md:py-3">
+        <span className="relative z-10 font-heading text-xs font-bold uppercase tracking-[0.2em] text-white/90 sm:text-sm md:text-base md:tracking-widest">
+          <span className="banner-text">Launching in MAY 2026</span>
         </span>
       </div>
       <Navbar />

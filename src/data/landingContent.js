@@ -9,11 +9,31 @@ export const landingContent = {
     headline: 'Why Stick to One Laundry Store?',
     subheadline:
       'Tired of random laundry choices? Compare stores in HSR, pick times for pickup and delivery, and get your clothes back when you need them.',
-    supportingLine: 'HSR Layout Bengaluru',
-    secondaryCtas: ['Become a Partner'],
+    supportingLine: 'HSR Layout · Bengaluru',
+    primaryCta: { label: 'Book pickup & delivery', href: '#book-pickup' },
+    secondaryCta: { label: 'I run a laundry store', href: '#partner' },
+  },
+
+  homepageSeo: {
+    eyebrow: 'For Bengaluru',
+    trustPoints: [
+      {
+        title: 'Verified partners',
+        body: 'We onboard stores against clear service and handling standards.',
+      },
+      {
+        title: 'Pricing upfront',
+        body: 'See indicative rates and offers before you confirm an order.',
+      },
+      {
+        title: 'HSR-first',
+        body: 'Launching hyperlocal in HSR Layout, designed to expand across the city.',
+      },
+    ],
   },
 
   problem: {
+    eyebrow: 'The friction',
     sectionHeadline: 'Still Managing Laundry the Old Way?',
     painPoints: [
       'No time to wash & iron every week',
@@ -26,6 +46,7 @@ export const landingContent = {
   },
 
   howItWorks: {
+    eyebrow: 'How it works',
     sectionHeadline: 'Compare. Tap. Done.',
     steps: [
       {
@@ -47,6 +68,7 @@ export const landingContent = {
   },
 
   services: {
+    eyebrow: 'What we handle',
     sectionHeadline: 'Everything Your Laundry Needs',
     servicesList: [
       { name: 'Wash & Fold', icon: 'shirt' },
@@ -58,6 +80,7 @@ export const landingContent = {
   },
 
   benefits: {
+    eyebrow: 'Your edge',
     sectionHeadline: 'Why Dhobify?',
     items: [
       'Multiple laundry brands in one app',
@@ -71,6 +94,7 @@ export const landingContent = {
   },
 
   partner: {
+    eyebrow: 'For laundry owners',
     sectionHeadline: 'Own a Laundry Shop? Grow With Dhobify.',
     description:
       'Join Dhobify and increase your daily orders while we handle customer acquisition, delivery coordination, and digital operations.',
@@ -82,12 +106,31 @@ export const landingContent = {
     ],
     cta: 'Become a Partner',
     formFields: [
-      { name: 'storeName', label: 'Store Name', type: 'text', required: true },
-      { name: 'area', label: 'Area', type: 'text', required: true },
-      { name: 'phone', label: 'Phone Number', type: 'tel', required: true },
+      {
+        name: 'storeName',
+        label: 'Store name',
+        hint: 'As on your shop board or Google Maps listing',
+        type: 'text',
+        required: true,
+      },
+      {
+        name: 'area',
+        label: 'Primary area',
+        hint: 'e.g. HSR Layout Sector 2',
+        type: 'text',
+        required: true,
+      },
+      {
+        name: 'phone',
+        label: 'WhatsApp or phone',
+        hint: 'We’ll reach out on this number',
+        type: 'tel',
+        required: true,
+      },
       {
         name: 'monthlyCapacity',
-        label: 'Monthly Order Capacity',
+        label: 'Rough monthly orders',
+        hint: 'Approximate orders you process today',
         type: 'text',
         required: true,
       },
@@ -95,6 +138,7 @@ export const landingContent = {
   },
 
   investor: {
+    eyebrow: 'Investors',
     sectionHeadline: 'Built for Hyperlocal Scale',
     visionPoints: [
       'Launching in HSR Layout in MAY 2026',
@@ -107,6 +151,7 @@ export const landingContent = {
   },
 
   faq: {
+    eyebrow: 'Questions',
     sectionHeadline: 'Frequently Asked Questions',
     items: [
       {
@@ -149,6 +194,7 @@ export const landingContent = {
   },
 
   finalCTA: {
+    eyebrow: 'Get started',
     headline: 'Ready to Simplify Laundry?',
     subheadline: 'Compare stores. Schedule pickup and delivery. Get it when you need it.',
     listStoreCta: 'List Your Store',

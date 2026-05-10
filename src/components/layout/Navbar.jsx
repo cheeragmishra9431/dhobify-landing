@@ -20,18 +20,17 @@ function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-white transition-shadow duration-200 ${
-        hasScrolled ? 'shadow-sm' : ''
+      className={`sticky top-0 z-50 border-b border-transparent bg-white/95 backdrop-blur-sm transition-[box-shadow,border-color] duration-200 ${
+        hasScrolled ? 'border-gray-100 shadow-sm' : ''
       }`}
     >
       <Container className="min-w-0">
-        <div className="flex h-24 min-w-0 items-center justify-between gap-2">
-          {/* Logo */}
-          <Link to="/" className="flex shrink-0 min-w-0" onClick={closeMenu}>
+        <div className="flex min-h-[4.25rem] min-w-0 items-center justify-between gap-3 py-2.5 md:min-h-[4.5rem] md:py-3">
+          <Link to="/" className="flex min-w-0 shrink-0 items-center" onClick={closeMenu}>
             <img
               src={logo}
               alt="Dhobify logo"
-              className="h-24 w-auto max-w-[400px] object-contain sm:max-w-none"
+              className="h-11 w-auto max-w-[min(100%,220px)] object-contain object-left sm:h-12 md:h-14 md:max-w-none"
             />
           </Link>
 

@@ -1,5 +1,6 @@
 import Section from '../ui/Section'
 import Container from '../ui/Container'
+import SectionEyebrow from '../ui/SectionEyebrow'
 import { landingContent } from '../../data/landingContent'
 
 const serviceIcons = {
@@ -70,29 +71,30 @@ const serviceIcons = {
 }
 
 function ServicesSection() {
-  const { sectionHeadline, servicesList, highlightLine } =
+  const { eyebrow, sectionHeadline, servicesList, highlightLine } =
     landingContent.services
 
   return (
     <Section background="grey">
       <Container>
+        <SectionEyebrow>{eyebrow}</SectionEyebrow>
         <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
           {sectionHeadline}
         </h2>
-        <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:mt-10 lg:grid-cols-4">
           {servicesList.map((service) => (
             <li
               key={service.name}
-              className="flex items-center gap-3 font-body text-base font-medium text-brand-black"
+              className="flex min-h-[52px] items-center gap-3 rounded-lg border border-gray-200/80 bg-white px-4 py-3 font-body text-base font-medium text-brand-black shadow-sm"
             >
-              <span className="text-brand-black">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-light-grey text-brand-black">
                 {serviceIcons[service.icon]}
               </span>
-              {service.name}
+              <span className="leading-snug">{service.name}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-8 font-body text-base font-semibold text-brand-black">
+        <p className="mt-8 max-w-3xl rounded-lg border border-brand-yellow/25 bg-brand-yellow/10 px-4 py-3 font-body text-base font-semibold leading-relaxed text-brand-black md:px-5 md:py-4">
           {highlightLine}
         </p>
       </Container>

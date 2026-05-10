@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /account-deletion
+Disallow: /data-deletion
+
+Sitemap: https://www.dhobify.in/sitemap.xml

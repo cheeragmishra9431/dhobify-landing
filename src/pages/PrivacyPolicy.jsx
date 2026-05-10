@@ -2,7 +2,16 @@ import InfoPageLayout from '../components/layout/InfoPageLayout'
 
 function PrivacyPolicy() {
   return (
-    <InfoPageLayout title="Privacy Policy" lastUpdated="March 29, 2026">
+    <InfoPageLayout
+      title="Privacy Policy"
+      lastUpdated="March 29, 2026"
+      seo={{
+        title: 'Privacy Policy | Dhobify — Laundry & Dry Cleaning Bangalore',
+        description:
+          'How Dhobify collects, uses, and protects your data when you book laundry and dry cleaning pickup in Bangalore.',
+        path: '/privacy',
+      }}
+    >
       <p>
         Dhobify (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) operates the
         Dhobify mobile application. This Privacy Policy explains how we collect,

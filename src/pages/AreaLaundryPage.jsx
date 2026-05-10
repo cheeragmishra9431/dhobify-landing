@@ -5,6 +5,9 @@ import Section from '../components/ui/Section'
 import Container from '../components/ui/Container'
 import Button from '../components/ui/Button'
 import SeoHead from '../lib/SeoHead'
+import JsonLd from '../components/seo/JsonLd'
+import MobileConversionBar from '../components/conversion/MobileConversionBar'
+import WhatsAppDeskFab from '../components/conversion/WhatsAppDeskFab'
 import { buildAreaJsonLd } from '../data/areaLaundryData'
 
 function AreaLaundryPage({ area }) {
@@ -18,10 +21,8 @@ function AreaLaundryPage({ area }) {
         description={area.metaDescription}
         path={area.path}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd id="jsonld-area-page" data={jsonLd} />
+      <div className="pb-[5.5rem] md:pb-0">
       <div className="announcement-banner announcement-banner--subtle-shine relative overflow-hidden bg-brand-black px-4 py-2.5 text-center md:py-3">
         <span className="relative z-10 font-heading text-xs font-bold uppercase tracking-[0.2em] text-white/90 sm:text-sm md:text-base md:tracking-widest">
           <span className="banner-text">Launching in MAY 2026</span>
@@ -42,7 +43,7 @@ function AreaLaundryPage({ area }) {
               <span className="mx-2" aria-hidden>
                 /
               </span>
-              <span className="text-brand-black/80">Laundry in {area.name}</span>
+              <span className="text-brand-black/80">{area.breadcrumbCurrentLabel}</span>
             </nav>
             <h1 className="font-heading text-hero-mobile font-extrabold leading-tight text-brand-black md:text-hero-desktop">
               {area.h1}
@@ -121,8 +122,27 @@ function AreaLaundryPage({ area }) {
                   className="scroll-mt-28 rounded-card border border-gray-200 bg-white p-5 shadow-sm md:scroll-mt-32"
                 >
                   <h3 className="font-heading text-lg font-bold text-brand-black">
-                    {store.name}
+                    {store.storePageSlug ? (
+                      <Link
+                        to={`/store/${store.storePageSlug}`}
+                        className="text-brand-black underline-offset-2 hover:underline"
+                      >
+                        {store.name}
+                      </Link>
+                    ) : (
+                      store.name
+                    )}
                   </h3>
+                  {store.storePageSlug && (
+                    <p className="mt-2">
+                      <Link
+                        to={`/store/${store.storePageSlug}`}
+                        className="text-sm font-semibold text-brand-black underline decoration-brand-yellow decoration-2 underline-offset-2"
+                      >
+                        View store page
+                      </Link>
+                    </p>
+                  )}
                   <p className="mt-2 font-body text-sm leading-relaxed text-brand-body-grey md:text-base">
                     {store.shortDescription}
                   </p>
@@ -220,6 +240,9 @@ function AreaLaundryPage({ area }) {
         </Section>
       </main>
       <Footer />
+      </div>
+      <MobileConversionBar />
+      <WhatsAppDeskFab />
     </>
   )
 }

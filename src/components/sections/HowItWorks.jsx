@@ -24,7 +24,7 @@ function HowItWorks() {
         <h2 className="font-heading text-section-mobile font-bold text-brand-black md:text-section-desktop">
           {sectionHeadline}
         </h2>
-        <div className="mt-8 grid gap-8 md:mt-10 md:grid-cols-3 md:gap-8 lg:gap-10">
+        <div className="mt-8 grid gap-8 md:mt-10 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-6">
           {steps.map((step, index) => (
             <div key={step.title} className="flex gap-4 rounded-card border border-gray-100 bg-brand-light-grey/30 p-5 md:flex-col md:p-6">
               <StepIcon number={index + 1} />

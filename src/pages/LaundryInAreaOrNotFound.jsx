@@ -1,26 +1,37 @@
 import { useParams } from 'react-router-dom'
-import { getAreaBySlug } from '../data/areaLaundryData'
+import { resolveAreaPage } from '../data/areaLaundryData'
 import AreaLaundryPage from './AreaLaundryPage'
 import NotFound from './NotFound'
 
+const LAUNDRY_PREFIX = 'laundry-in-'
+const DRY_PREFIX = 'dry-cleaning-in-'
+
 /**
- * Resolves /laundry-in-hsr-layout style URLs. Static routes in App take precedence;
- * this only runs for single-segment paths that are not /privacy, /support, etc.
+ * Resolves /laundry-in-{area} and /dry-cleaning-in-{area}.
+ * Static routes in App take precedence.
  */
 function LaundryInAreaOrNotFound() {
   const { slug } = useParams()
-  if (!slug?.startsWith('laundry-in-')) {
+
+  if (!slug) {
     return <NotFound />
   }
-  const areaSlug = slug.slice('laundry-in-'.length)
-  if (!areaSlug) {
-    return <NotFound />
+
+  if (slug.startsWith(LAUNDRY_PREFIX)) {
+    const areaKey = slug.slice(LAUNDRY_PREFIX.length)
+    const area = resolveAreaPage(areaKey, 'laundry')
+    if (!area) return <NotFound />
+    return <AreaLaundryPage area={area} />
   }
-  const area = getAreaBySlug(areaSlug)
-  if (!area) {
-    return <NotFound />
+
+  if (slug.startsWith(DRY_PREFIX)) {
+    const areaKey = slug.slice(DRY_PREFIX.length)
+    const area = resolveAreaPage(areaKey, 'dry-cleaning')
+    if (!area) return <NotFound />
+    return <AreaLaundryPage area={area} />
   }
-  return <AreaLaundryPage area={area} />
+
+  return <NotFound />
 }
 
 export default LaundryInAreaOrNotFound

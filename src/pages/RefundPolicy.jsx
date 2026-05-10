@@ -2,7 +2,16 @@ import InfoPageLayout from '../components/layout/InfoPageLayout'
 
 function RefundPolicy() {
   return (
-    <InfoPageLayout title="Refund Policy" lastUpdated="March 29, 2026">
+    <InfoPageLayout
+      title="Refund Policy"
+      lastUpdated="March 29, 2026"
+      seo={{
+        title: 'Refund Policy | Dhobify',
+        description:
+          'Refund and resolution policy for Dhobify laundry and dry cleaning bookings in Bangalore.',
+        path: '/refund',
+      }}
+    >
       <p>
         At Dhobify, we want you to be satisfied with every order. This policy
         outlines when and how refunds are handled.

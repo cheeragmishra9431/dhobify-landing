@@ -30,6 +30,10 @@ function Navbar() {
             <img
               src={logo}
               alt="Dhobify logo"
+              width={176}
+              height={56}
+              loading="eager"
+              decoding="async"
               className="h-11 w-auto max-w-[min(100%,220px)] object-contain object-left sm:h-12 md:h-14 md:max-w-none"
             />
           </Link>

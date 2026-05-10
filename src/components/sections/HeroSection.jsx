@@ -76,6 +76,7 @@ function HeroSection() {
                     alt="Dhobify app home screen on an iPhone"
                     decoding="async"
                     loading="eager"
+                    fetchPriority="high"
                     className="h-auto w-full object-cover object-top"
                     width={473}
                     height={1024}

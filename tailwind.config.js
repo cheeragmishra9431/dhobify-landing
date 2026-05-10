@@ -36,6 +36,26 @@ export default {
         'section-desktop': ['2rem', { lineHeight: '1.3' }],
         'section-mobile': ['1.5rem', { lineHeight: '1.3' }],
       },
+      keyframes: {
+        seoFadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        seoFadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        seoFloat: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '50%': { transform: 'translate(-2%, 3%) scale(1.03)' },
+        },
+      },
+      animation: {
+        'seo-in': 'seoFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'seo-in-fast': 'seoFadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both',
+        'seo-fade': 'seoFadeIn 0.8s ease-out both',
+        'seo-float': 'seoFloat 18s ease-in-out infinite',
+      },
       maxWidth: {
         content: '1200px',
       },

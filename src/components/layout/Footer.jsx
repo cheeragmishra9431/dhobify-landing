@@ -15,6 +15,10 @@ function Footer() {
             <img
               src={logo}
               alt="Dhobify logo"
+              loading="lazy"
+              decoding="async"
+              width={144}
+              height={80}
               className="h-20 w-auto object-contain"
             />
             <p className="font-body text-sm text-white/90 leading-relaxed">

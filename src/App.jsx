@@ -6,6 +6,7 @@ import TermsOfService from './pages/TermsOfService'
 import RefundPolicy from './pages/RefundPolicy'
 import Support from './pages/Support'
 import LaundryInAreaOrNotFound from './pages/LaundryInAreaOrNotFound'
+import StorePage from './pages/StorePage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/store/:storeSlug" element={<StorePage />} />
           <Route path="/:slug" element={<LaundryInAreaOrNotFound />} />
         </Routes>
       </div>

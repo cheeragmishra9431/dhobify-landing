@@ -2,7 +2,16 @@ import InfoPageLayout from '../components/layout/InfoPageLayout'
 
 function TermsOfService() {
   return (
-    <InfoPageLayout title="Terms of Service" lastUpdated="March 29, 2026">
+    <InfoPageLayout
+      title="Terms of Service"
+      lastUpdated="March 29, 2026"
+      seo={{
+        title: 'Terms of Service | Dhobify',
+        description:
+          'Terms governing use of the Dhobify app and laundry marketplace services in Bangalore.',
+        path: '/terms',
+      }}
+    >
       <p>
         Welcome to Dhobify. By downloading, installing, or using the Dhobify
         mobile application, you agree to be bound by these Terms of Service. If

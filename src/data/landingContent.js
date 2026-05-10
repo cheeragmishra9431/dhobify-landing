@@ -6,11 +6,11 @@
 
 export const landingContent = {
   hero: {
-    headline: 'Why Stick to One Laundry Store?',
+    headline: 'Compare the Best Laundry & Dry Cleaning Services in Bangalore',
     subheadline:
-      'Tired of random laundry choices? Compare stores in HSR, pick times for pickup and delivery, and get your clothes back when you need them.',
-    supportingLine: 'HSR Layout · Bengaluru',
-    primaryCta: { label: 'Book pickup & delivery', href: '#book-pickup' },
+      'Book pickup & delivery from trusted laundry stores near you. Compare laundry services Bangalore residents rely on—with clear pricing before you confirm.',
+    supportingLine: 'HSR Layout · Bellandur · Koramangala · Bengaluru',
+    primaryCta: { label: 'Book Pickup', href: '#book-pickup' },
     secondaryCta: { label: 'I run a laundry store', href: '#partner' },
   },
 
@@ -26,8 +26,8 @@ export const landingContent = {
         body: 'See indicative rates and offers before you confirm an order.',
       },
       {
-        title: 'HSR-first',
-        body: 'Launching hyperlocal in HSR Layout, designed to expand across the city.',
+        title: 'City rollout',
+        body: 'HSR Layout and Bellandur live next; Koramangala expansion follows the same playbook.',
       },
     ],
   },
@@ -47,22 +47,27 @@ export const landingContent = {
 
   howItWorks: {
     eyebrow: 'How it works',
-    sectionHeadline: 'Compare. Tap. Done.',
+    sectionHeadline: 'From compare to clean clothes—in four steps',
     steps: [
       {
-        title: 'Choose Your Store',
+        title: 'Choose store',
         description:
-          'Browse and compare laundry stores near you. Check pricing and services before you decide.',
+          'Browse Cleanz24, UrbanClean Premium, Shyam Sundar Laundry, Express Laundry, and other vetted partners. See services and indicative rates before you book.',
       },
       {
-        title: 'Schedule Pickup & Delivery',
+        title: 'Schedule pickup',
         description:
-          "Choose collection and return times that work for you—we pick up and bring your clothes back on your schedule.",
+          'Pick collection times that suit your lobby or gate policies. Laundry pickup Bangalore orders stay transparent—slot changes surface in-app where possible.',
       },
       {
-        title: 'Get Fresh Clothes Back',
+        title: 'Clothes cleaned',
         description:
-          'Sit back while your clothes are professionally cleaned and returned in the window you set—often within 24–48 hours unless you choose a different slot.',
+          'Your bag is processed with the handling notes you added for stains or delicates—from everyday wash & fold to dry cleaning Bangalore orders that need specialist care.',
+      },
+      {
+        title: 'Delivered back',
+        description:
+          'Choose a return window so someone is home for pressed shirts, bedding, or dry-cleaned coats. Most routes finish within 24–48 hours unless you pick a different slot.',
       },
     ],
   },
@@ -86,7 +91,7 @@ export const landingContent = {
       'Multiple laundry brands in one app',
       'Schedule pickup and delivery when it works for you',
       'Transparent pricing before you book',
-      'Hyperlocal focus in HSR Layout',
+      'Hyperlocal focus across HSR Layout, Bellandur, and expanding Koramangala corridors',
       'Secure digital payments',
       'Quality-controlled processing',
     ],
@@ -155,6 +160,18 @@ export const landingContent = {
     sectionHeadline: 'Frequently Asked Questions',
     items: [
       {
+        id: 'cost-bangalore',
+        question: 'How much does laundry cost in Bangalore?',
+        answer:
+          'Wash & fold typically lands around ₹65–₹125 per kg depending on the partner and finishing, while dry cleaning is quoted per garment after fabric checks. Dhobify surfaces those bands on each area and store page, then locks the final amount at checkout.',
+      },
+      {
+        id: 'same-day',
+        question: 'Do you offer same-day laundry or dry cleaning?',
+        answer:
+          'Select partners like Express Laundry may offer faster cycles when fabrics and weather allow. Availability shows up before you pay so you are never guessing about rush surcharges.',
+      },
+      {
         id: 'min-order',
         question: 'What is the minimum order amount?',
         answer:
@@ -206,11 +223,13 @@ export const landingContent = {
 
   footer: {
     about:
-      'Dhobify is a hyperlocal laundry marketplace connecting customers with trusted laundry partners in HSR Layout.',
-    location: 'Currently serving HSR Layout, Bengaluru.',
+      'Dhobify is a laundry and dry-cleaning marketplace in Bangalore—compare stores, book pickup, and schedule delivery from one app.',
+    location: 'Serving HSR Layout, Bellandur, Koramangala (rolling out), and nearby Bengaluru neighbourhoods.',
     contactEmail: 'support@dhobify.in',
     links: [
       { text: 'Laundry in HSR Layout', href: '/laundry-in-hsr-layout' },
+      { text: 'Laundry in Bellandur', href: '/laundry-in-bellandur' },
+      { text: 'Dry cleaning in HSR Layout', href: '/dry-cleaning-in-hsr-layout' },
       { text: 'Privacy Policy', href: '/privacy' },
       { text: 'Terms of Service', href: '/terms' },
       {

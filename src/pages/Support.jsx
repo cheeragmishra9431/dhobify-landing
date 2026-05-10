@@ -2,7 +2,15 @@ import InfoPageLayout from '../components/layout/InfoPageLayout'
 
 function Support() {
   return (
-    <InfoPageLayout title="Contact Support">
+    <InfoPageLayout
+      title="Contact Support"
+      seo={{
+        title: 'Support | Dhobify — Laundry Pickup Bangalore',
+        description:
+          'Contact Dhobify for orders, pickups, deliveries, and partner enquiries for laundry services in Bangalore.',
+        path: '/support',
+      }}
+    >
       <p className="text-lg">
         We&apos;re here to help! Reach out to us through any of the following
         channels:

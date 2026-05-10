@@ -5,36 +5,38 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
 
   return (
     <div className="border-b border-gray-200 last:border-b-0">
-      <button
-        type="button"
-        id={`accordion-heading-${id}`}
-        aria-expanded={isOpen}
-        aria-controls={`accordion-panel-${id}`}
-        onClick={() => onToggle(index)}
-        className="flex w-full items-center justify-between px-5 py-6 text-left font-body text-base font-medium text-brand-black hover:text-brand-black/80 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-inset min-h-[44px]"
-      >
-        {question}
-        <span
-          className={`ml-4 shrink-0 text-brand-black transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-          aria-hidden
+      <h3 className="m-0 text-[inherit] font-[inherit]">
+        <button
+          type="button"
+          id={`accordion-heading-${id}`}
+          aria-expanded={isOpen}
+          aria-controls={`accordion-panel-${id}`}
+          onClick={() => onToggle(index)}
+          className="flex min-h-[44px] w-full items-center justify-between px-5 py-6 text-left font-body text-base font-medium text-brand-black transition-colors duration-200 hover:text-brand-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-inset"
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          {question}
+          <span
+            className={`ml-4 shrink-0 text-brand-black transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+            aria-hidden
           >
-            <path
-              d="M5 7.5L10 12.5L15 7.5"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </span>
-      </button>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+      </h3>
       <div
         id={`accordion-panel-${id}`}
         role="region"

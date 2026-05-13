@@ -44,7 +44,7 @@ function OrderFlowDemo({ variant = 'default' }) {
   }, [reducedMotion, paused])
 
   const step = orderFlowSteps[index]
-  const phoneMax = isHero ? 'max-w-[min(100%,260px)]' : 'max-w-[min(100%,280px)]'
+  const phoneMax = isHero ? 'max-w-[min(100%,280px,86vw)]' : 'max-w-[min(100%,280px)]'
   const captionMt = isHero ? 'mt-7' : 'mt-6'
 
   return (
@@ -117,7 +117,7 @@ function OrderFlowDemo({ variant = 'default' }) {
         </div>
       </div>
 
-      <div className={`w-full max-w-md text-center ${captionMt}`}>
+      <div className={`w-full min-w-0 max-w-md text-center ${captionMt}`}>
         <div
           aria-live="polite"
           aria-atomic="true"
@@ -137,7 +137,7 @@ function OrderFlowDemo({ variant = 'default' }) {
         </div>
 
         <div
-          className={`mt-4 flex max-w-full snap-x snap-mandatory gap-1.5 touch-pan-x overscroll-x-contain overflow-x-auto px-1 pb-0.5 sm:mx-0 sm:flex-wrap sm:justify-center sm:gap-2 sm:touch-auto sm:overscroll-auto sm:overflow-visible ${isHero ? 'md:mt-5' : 'mt-5 -mx-2 px-2 pb-1'}`}
+          className={`mt-4 flex max-w-full snap-x snap-mandatory gap-1.5 overflow-x-auto overscroll-x-contain px-1 pb-2 sm:mx-0 sm:flex-wrap sm:justify-center sm:gap-2 sm:overflow-visible sm:px-0.5 sm:pb-0.5 sm:overscroll-auto ${isHero ? 'md:mt-5' : 'mt-5 -mx-2 px-2 pb-2'}`}
           role="tablist"
           aria-label="Order flow steps"
         >
@@ -147,9 +147,9 @@ function OrderFlowDemo({ variant = 'default' }) {
               type="button"
               role="tab"
               aria-selected={i === index}
-              className={`min-h-[40px] shrink-0 snap-center rounded-full px-3 py-1.5 font-heading text-[10px] font-semibold transition-all duration-300 sm:min-h-[44px] sm:px-3.5 sm:py-2 sm:text-xs ${
+              className={`min-h-[44px] shrink-0 snap-center rounded-full px-3 py-2 font-heading text-[10px] font-semibold leading-tight transition-all duration-300 sm:px-3.5 sm:py-2 sm:text-xs ${
                 i === index
-                  ? 'bg-brand-yellow text-brand-black shadow-sm shadow-brand-yellow/20 ring-2 ring-[#d6473a]/35 ring-offset-2 ring-offset-white'
+                  ? 'bg-brand-yellow text-brand-black shadow-sm shadow-brand-yellow/20 ring-2 ring-[#d6473a]/35 ring-offset-1 ring-offset-white sm:ring-offset-2'
                   : 'bg-gray-50/90 text-brand-body-grey ring-1 ring-gray-200/90 hover:bg-[rgba(214,71,58,0.06)] hover:text-brand-black hover:ring-[rgba(214,71,58,0.2)]'
               }`}
               onClick={() => go(i)}

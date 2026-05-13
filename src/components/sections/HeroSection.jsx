@@ -25,10 +25,10 @@ function HeroSection() {
       </div>
 
       <Container className="relative z-10 max-w-full">
-        {/* Flex + shrink-0 columns (no 1fr) so copy and mock stay grouped—centered on wide screens */}
-        <div className="grid min-w-0 w-full grid-cols-1 items-center justify-items-center gap-8 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:justify-items-stretch lg:gap-x-8 lg:gap-y-10 xl:gap-x-12 2xl:gap-x-16">
+        {/* Grid: text column max-content capped (not 1fr) so copy + mock stay visually grouped; whole row centered */}
+        <div className="grid min-w-0 w-full grid-cols-1 items-center justify-items-center gap-8 sm:gap-12 lg:grid-cols-[minmax(0,min(100%,40rem))_auto] lg:justify-center lg:justify-items-start lg:gap-x-6 lg:gap-y-10 xl:gap-x-10 2xl:gap-x-12">
           <Reveal
-            className="order-1 w-full min-w-0 max-w-xl text-center [overflow-wrap:anywhere] lg:max-w-[min(100%,40rem)] lg:justify-self-start lg:text-left"
+            className="order-1 w-full min-w-0 max-w-xl text-center [overflow-wrap:anywhere] lg:max-w-none lg:justify-self-start lg:text-left"
             delay={0}
           >
             <h1 className="font-heading text-[clamp(1.375rem,4.2vw+0.65rem,2rem)] font-extrabold leading-[1.08] tracking-[-0.02em] text-brand-black text-balance [overflow-wrap:anywhere] md:text-hero-desktop md:leading-[1.07] lg:text-hero-display lg:leading-[1.05]">
@@ -57,7 +57,7 @@ function HeroSection() {
           </Reveal>
 
           <Reveal
-            className="order-2 flex w-full min-w-0 justify-center lg:w-auto lg:max-w-[min(100%,420px)] lg:justify-self-center"
+            className="order-2 flex w-full min-w-0 justify-center lg:w-auto lg:max-w-[min(100%,420px)] lg:justify-self-start"
             delay={90}
             rootMargin="-6%"
           >
